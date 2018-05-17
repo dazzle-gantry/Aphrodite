@@ -1,0 +1,6 @@
+enabled: '1'
+url: ''
+image: 'gantry-theme://images/logo/aphrodite.png'
+svg: ''
+text: Aphrodite
+class: g-logo

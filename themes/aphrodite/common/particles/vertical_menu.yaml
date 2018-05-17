@@ -1,0 +1,53 @@
+name: Vertical Menu
+description: Simple menu
+type: particle
+icon: fa-bars
+
+configuration:
+  caching:
+    type: menu
+
+form:
+  fields:
+
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the menu particle.
+      default: true
+
+    _info:
+      type: separator.note
+      class: alert alert-info
+      content: GANTRY5_PARTICLE_MENU_INFO
+
+    menu:
+      type: menu.list
+      label: Menu
+      description: Select menu to be used with the particle.
+      default: ''
+      selectize:
+          allowEmptyOption: true
+      options:
+        '': Use Default Menu
+        '-active-': Use Active Menu
+
+    base:
+      type: menu.item
+      label: Base Item
+      description: "Select a menu item to always be used as the base for the menu display."
+      default: '/'
+      options:
+        '/': Active
+
+    startLevel:
+      type: input.text
+      label: Start Level
+      description: Set the start level of the menu.
+      default: 1
+
+    maxLevels:
+      type: input.text
+      label: Max Levels
+      description: Set the maximum number of menu levels to display.
+      default: 0

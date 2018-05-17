@@ -1,0 +1,243 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: services
+  timestamp: 1496332897
+layout:
+  /header/:
+    -
+      - system-messages-2942
+    -
+      - 'logo-5968 56'
+      - 'iconmenu-8417 44'
+  /navigation/:
+    -
+      - 'menu-4569 80'
+      - 'social-3742 20'
+  /showcase/:
+    -
+      - custom-1044
+  /container-6898/:
+    -
+      -
+        'mainbar 67':
+          -
+            - 'custom-1767 33.3'
+            - 'custom-9712 33.3'
+            - 'custom-3412 33.3'
+          -
+            - 'custom-2341 33.3'
+            - 'custom-4096 33.3'
+            - 'custom-6053 33.3'
+          -
+            - contentlist-9027
+          -
+            - 'infolist-7445 33.3'
+            - 'infolist-6329 33.3'
+            - 'infolist-2793 33.3'
+      -
+        'sidebar 33': {  }
+  /extension/:
+    -
+      - custom-9381
+  /footer/:
+    -
+      - 'custom-4303 33.3'
+      - 'newsletter-4558 33.3'
+      - 'custom-2036 33.3'
+  /copyright/:
+    -
+      - copyright-8224
+  offcanvas:
+    -
+      - mobile-menu-8533
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  mainbar:
+    type: section
+  sidebar:
+    type: section
+  container-6898:
+    title: Main
+    attributes:
+      id: g-main
+      boxed: ''
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  logo-5968:
+    block:
+      class: g-logo-block
+  iconmenu-8417:
+    title: 'Icon Menu'
+    block:
+      class: flush
+  menu-4569:
+    block:
+      class: g-menu-block
+  custom-1044:
+    title: 'What We Do'
+    attributes:
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">What We Do</h2>\n\t<div class=\"g-layercontent-subtitle\">Learn More About Our Great Services</div>\n</div>"
+    block:
+      class: 'flush center'
+  custom-1767:
+    title: Desktop
+    attributes:
+      html: "<span class=\"fa fa-desktop fa-3x\"></span>\n<h2 class=\"g-title\">Desktop Apps</h2>\n<p>Collaboratively administrate empowered markets via available great networks.</p>"
+    block:
+      class: center
+      variations: box-blue
+  custom-9712:
+    title: Mobile
+    attributes:
+      html: "<span class=\"fa fa-mobile fa-3x\"></span>\n<h2 class=\"g-title\">Mobile Apps</h2>\n<p>Collaboratively administrate empowered markets via available great networks.</p>"
+    block:
+      class: center
+      variations: box-grey
+  custom-3412:
+    title: Cloud
+    attributes:
+      html: "<span class=\"fa fa-cloud fa-3x\"></span>\n<h2 class=\"g-title\">Cloud Servers</h2>\n<p>Collaboratively administrate empowered markets via available great networks.</p>"
+    block:
+      class: center
+      variations: box-orange
+  custom-2341:
+    title: Databases
+    attributes:
+      html: "<span class=\"fa fa-database fa-3x\"></span>\n<h2 class=\"g-title\">Databases</h2>\n<p>Collaboratively administrate empowered markets via available great networks.</p>"
+    block:
+      class: center
+      variations: box-pink
+  custom-4096:
+    title: Graphics
+    attributes:
+      html: "<span class=\"fa fa-bar-chart-o fa-3x\"></span>\n<h2 class=\"g-title\">Graphics</h2>\n<p>Collaboratively administrate empowered markets via available great networks.</p>"
+    block:
+      class: center
+      variations: box-purple
+  custom-6053:
+    title: Analyst
+    attributes:
+      html: "<span class=\"fa fa-calculator fa-3x\"></span>\n<h2 class=\"g-title\">Analyst</h2>\n<p>Collaboratively administrate empowered markets via available great networks.</p>"
+    block:
+      class: center
+      variations: box-red
+  contentlist-9027:
+    title: 'Why Choose Us'
+    attributes:
+      image: 'gantry-theme://images/demo/services/img-01.jpg'
+      imagetag: Services
+      headline: 'Why Choose Us'
+      subtitle: 'Absolutely Stunning Design and Functionality'
+      desc: 'Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions. Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Dynamically innovate resource-leveling customer service for state of the art customer service.'
+      readmore: 'Learn More'
+      link: '#'
+    block:
+      class: nopaddingall
+      variations: box2
+  infolist-7445:
+    title: 'Graphic Design'
+    attributes:
+      infolists:
+        -
+          link: '#'
+          description: 'Dynamically procrastinate B2C users after installed base benefits.'
+          title: 'Graphic Design'
+        -
+          link: '#'
+          description: 'Dynamically procrastinate B2C users after installed base benefits.'
+          title: Domain
+        -
+          link: '#'
+          description: 'Dynamically procrastinate B2C users after installed base benefits.'
+          title: HelpDesk
+    block:
+      variations: box3
+  infolist-6329:
+    title: Programming
+    attributes:
+      infolists:
+        -
+          link: '#'
+          description: 'Dynamically procrastinate B2C users after installed base benefits.'
+          title: Programming
+        -
+          link: '#'
+          description: 'Dynamically procrastinate B2C users after installed base benefits.'
+          title: Security
+        -
+          link: '#'
+          description: 'Dynamically procrastinate B2C users after installed base benefits.'
+          title: Template
+    block:
+      variations: box3
+  infolist-2793:
+    title: Hosting
+    attributes:
+      infolists:
+        -
+          link: '#'
+          description: 'Dynamically procrastinate B2C users after installed base benefits.'
+          title: Hosting
+        -
+          link: '#'
+          description: 'Dynamically procrastinate B2C users after installed base benefits.'
+          title: Server
+        -
+          link: '#'
+          description: 'Dynamically procrastinate B2C users after installed base benefits.'
+          title: MarketPlace
+    block:
+      variations: box3
+  custom-9381:
+    title: 'Save Time and Effort'
+    attributes:
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Save Time and Effort</h2>\n\t<div class=\"g-layercontent-subtitle\">We Always Create the Real Value and Work with All Passion</div>\n\t<a href=\"http://www.rockettheme.com/wordpress/themes/aphrodite\" class=\"button button-2\">Purchase Aphrodite</a>\n</div>"
+    block:
+      class: 'flush center'
+      variations: box1
+  custom-4303:
+    title: 'About Aphrodite'
+    attributes:
+      html: "<h2 class=\"g-title\">About Aphrodite</h2>\n\n<p>All demo content is for sample purposes only, intended to represent a live site.</p>\n\n<p>The sample pages are intended to show how Aphrodite can be constructed on your site.</p>"
+  newsletter-4558:
+    attributes:
+      title: Newsletter
+      headtext: 'Subscribe to our newsletter and stay updated on the latest developments and special offers!'
+      inputboxtext: 'Email Address'
+      buttontext: Join
+      uri: rocketthemeblog
+      buttonclass: 'button button-3'
+  custom-2036:
+    title: 'Sample Sitemap'
+    attributes:
+      html: "<h2 class=\"g-title\">Sample Sitemap</h2>\n\n<div class=\"g-grid\">\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Home</a></li>\n\t\t\t<li><a href=\"#\">Features</a></li>\n\t\t\t<li><a href=\"#\">Typography</a></li>\n\t\t\t<li><a href=\"#\">Particles</a></li>\n\t\t\t<li><a href=\"#\">Variations</a></li>\n\t\t</ul>\t\t\n\t</div>\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Buttons</a></li>\n\t\t\t<li><a href=\"#\">Pages</a></li>\n\t\t\t<li><a href=\"#\">Guide</a></li>\n\t\t\t<li><a href=\"#\">Support</a></li>\n\t\t\t<li><a href=\"#\">Download</a></li>\n\t\t</ul>\t\t\n\t</div>\t\n</div>"
+  copyright-8224:
+    attributes:
+      date:
+        start: '2007'
+      owner: 'RocketTheme, LLC'
+    block:
+      class: center
+  mobile-menu-8533:
+    title: 'Mobile Menu'

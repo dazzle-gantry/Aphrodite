@@ -1,0 +1,459 @@
+preset1:
+  image: 'gantry-admin://images/preset1.png'
+  description: GANTRY5_PLATFORM_PRESET1
+  colors:
+    - '#ECBC2E'
+    - '#8B5717'
+
+  styles:
+    base:
+      background: '#1f1f1f'
+      text-color: '#888888'
+    accent:
+      color-1: '#ecbc2e'
+      color-2: '#8b5717'
+    link:
+      regular: '#ecbc2e'
+      hover:   '#888888'
+    header:
+      background: '#ecbc2e'
+      text-color: '#b08523'
+    navigation:
+      background: '#353535'
+      text-color: '#828282'
+    showcase:
+      background: '#23262f'
+      text-color: '#ffffff'
+    feature:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    main:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    extension:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    footer:
+      background: '#1f1f1f'
+      text-color: '#878787'
+    copyright:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    offcanvas:
+      background: '#1b1b1f'
+      text-color: '#ffffff'
+      toggle-color: '#ecbc2e'
+
+preset2:
+  image: 'gantry-admin://images/preset2.png'
+  description: GANTRY5_PLATFORM_PRESET2
+  colors:
+    - '#00a182'
+    - '#00634f'
+
+  styles:
+    base:
+      background: '#1f1f1f'
+      text-color: '#888888'
+    accent:
+      color-1: '#00a182'
+      color-2: '#00634f'
+    link:
+      regular: '#00a182'
+      hover:   '#888888'
+    header:
+      background: '#00a182'
+      text-color: '#005847'
+    navigation:
+      background: '#353535'
+      text-color: '#828282'
+    showcase:
+      background: '#23262f'
+      text-color: '#ffffff'
+    feature:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    main:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    extension:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    footer:
+      background: '#1f1f1f'
+      text-color: '#878787'
+    copyright:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    offcanvas:
+      background: '#1b1b1f'
+      text-color: '#ffffff'
+      toggle-color: '#00a182'
+
+preset3:
+  image: 'gantry-admin://images/preset3.png'
+  description: GANTRY5_PLATFORM_PRESET3
+  colors:
+    - '#6bb9f0'
+    - '#248ad1'
+
+  styles:
+    base:
+      background: '#1f1f1f'
+      text-color: '#888888'
+    accent:
+      color-1: '#6bb9f0'
+      color-2: '#248ad1'
+    link:
+      regular: '#6bb9f0'
+      hover:   '#888888'
+    header:
+      background: '#6bb9f0'
+      text-color: '#3b6684'
+    navigation:
+      background: '#353535'
+      text-color: '#828282'
+    showcase:
+      background: '#23262f'
+      text-color: '#ffffff'
+    feature:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    main:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    extension:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    footer:
+      background: '#1f1f1f'
+      text-color: '#878787'
+    copyright:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    offcanvas:
+      background: '#1b1b1f'
+      text-color: '#ffffff'
+      toggle-color: '#6bb9f0'
+
+preset4:
+  image: 'gantry-admin://images/preset4.png'
+  description: GANTRY5_PLATFORM_PRESET4
+  colors:
+    - '#e26a6a'
+    - '#991e1e'
+
+  styles:
+    base:
+      background: '#1f1f1f'
+      text-color: '#888888'
+    accent:
+      color-1: '#e26a6a'
+      color-2: '#991e1e'
+    link:
+      regular: '#e26a6a'
+      hover:   '#888888'
+    header:
+      background: '#e26a6a'
+      text-color: '#7c3a3a'
+    navigation:
+      background: '#353535'
+      text-color: '#828282'
+    showcase:
+      background: '#23262f'
+      text-color: '#ffffff'
+    feature:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    main:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    extension:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    footer:
+      background: '#1f1f1f'
+      text-color: '#878787'
+    copyright:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    offcanvas:
+      background: '#1b1b1f'
+      text-color: '#ffffff'
+      toggle-color: '#e26a6a'
+
+preset5:
+  image: 'gantry-admin://images/preset5.png'
+  description: GANTRY5_PLATFORM_PRESET5
+  colors:
+    - '#ae68a6'
+    - '#42003a'
+
+  styles:
+    base:
+      background: '#1f1f1f'
+      text-color: '#888888'
+    accent:
+      color-1: '#ae68a6'
+      color-2: '#42003a'
+    link:
+      regular: '#ae68a6'
+      hover:   '#888888'
+    header:
+      background: '#ae68a6'
+      text-color: '#693f64'
+    navigation:
+      background: '#353535'
+      text-color: '#828282'
+    showcase:
+      background: '#23262f'
+      text-color: '#ffffff'
+    feature:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    main:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    extension:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    footer:
+      background: '#1f1f1f'
+      text-color: '#878787'
+    copyright:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    offcanvas:
+      background: '#1b1b1f'
+      text-color: '#ffffff'
+      toggle-color: '#ae68a6'
+
+preset6:
+  image: 'gantry-admin://images/preset6.png'
+  description: GANTRY5_PLATFORM_PRESET6
+  colors:
+    - '#829eb9'
+    - '#355a7e'
+
+  styles:
+    base:
+      background: '#1f1f1f'
+      text-color: '#888888'
+    accent:
+      color-1: '#829eb9'
+      color-2: '#355a7e'
+    link:
+      regular: '#829eb9'
+      hover:   '#888888'
+    header:
+      background: '#829eb9'
+      text-color: '#475766'
+    navigation:
+      background: '#353535'
+      text-color: '#828282'
+    showcase:
+      background: '#23262f'
+      text-color: '#ffffff'
+    feature:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    main:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    extension:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    footer:
+      background: '#1f1f1f'
+      text-color: '#878787'
+    copyright:
+      background: '#1a1a1a'
+      text-color: '#878787'
+    offcanvas:
+      background: '#1b1b1f'
+      text-color: '#ffffff'
+      toggle-color: '#829eb9'
+
+preset7:
+  image: 'gantry-admin://images/preset7.png'
+  description: GANTRY5_PLATFORM_PRESET7
+  colors:
+    - '#1abc9c'
+    - '#007e65'
+
+  styles:
+    base:
+      background: '#ffffff'
+      text-color: '#888888'
+    accent:
+      color-1: '#1abc9c'
+      color-2: '#007e65'
+    link:
+      regular: '#1abc9c'
+      hover:   '#888888'
+    header:
+      background: '#1abc9c'
+      text-color: '#138871'
+    navigation:
+      background: '#ffffff'
+      text-color: '#888888'
+    showcase:
+      background: '#e8e8e8'
+      text-color: '#878787'
+    feature:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    main:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    extension:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    footer:
+      background: '#ffffff'
+      text-color: '#888888'
+    copyright:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    offcanvas:
+      background: '#f0f0f0'
+      text-color: '#888888'
+      toggle-color: '#1abc9c'
+
+preset8:
+  image: 'gantry-admin://images/preset8.png'
+  description: GANTRY5_PLATFORM_PRESET8
+  colors:
+    - '#11a6d7'
+    - '#036788'
+
+  styles:
+    base:
+      background: '#ffffff'
+      text-color: '#888888'
+    accent:
+      color-1: '#11a6d7'
+      color-2: '#036788'
+    link:
+      regular: '#11a6d7'
+      hover:   '#888888'
+    header:
+      background: '#11a6d7'
+      text-color: '#0c789b'
+    navigation:
+      background: '#ffffff'
+      text-color: '#888888'
+    showcase:
+      background: '#e8e8e8'
+      text-color: '#878787'
+    feature:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    main:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    extension:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    footer:
+      background: '#ffffff'
+      text-color: '#888888'
+    copyright:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    offcanvas:
+      background: '#f0f0f0'
+      text-color: '#888888'
+      toggle-color: '#11a6d7'
+
+preset9:
+  image: 'gantry-admin://images/preset9.png'
+  description: GANTRY5_PLATFORM_PRESET9
+  colors:
+    - '#e25b30'
+    - '#952501'
+
+  styles:
+    base:
+      background: '#ffffff'
+      text-color: '#888888'
+    accent:
+      color-1: '#e25b30'
+      color-2: '#952501'
+    link:
+      regular: '#e25b30'
+      hover:   '#888888'
+    header:
+      background: '#e25b30'
+      text-color: '#a34223'
+    navigation:
+      background: '#ffffff'
+      text-color: '#888888'
+    showcase:
+      background: '#e8e8e8'
+      text-color: '#878787'
+    feature:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    main:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    extension:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    footer:
+      background: '#ffffff'
+      text-color: '#888888'
+    copyright:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    offcanvas:
+      background: '#f0f0f0'
+      text-color: '#888888'
+      toggle-color: '#e25b30'
+
+preset10:
+  image: 'gantry-admin://images/preset10.png'
+  description: GANTRY5_PLATFORM_PRESET10
+  colors:
+    - '#5b90a1'
+    - '#226075'
+
+  styles:
+    base:
+      background: '#ffffff'
+      text-color: '#888888'
+    accent:
+      color-1: '#5b90a1'
+      color-2: '#226075'
+    link:
+      regular: '#5b90a1'
+      hover:   '#888888'
+    header:
+      background: '#5b90a1'
+      text-color: '#426874'
+    navigation:
+      background: '#ffffff'
+      text-color: '#888888'
+    showcase:
+      background: '#e8e8e8'
+      text-color: '#878787'
+    feature:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    main:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    extension:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    footer:
+      background: '#ffffff'
+      text-color: '#888888'
+    copyright:
+      background: '#f5f5f5'
+      text-color: '#878787'
+    offcanvas:
+      background: '#f0f0f0'
+      text-color: '#888888'
+      toggle-color: '#5b90a1'

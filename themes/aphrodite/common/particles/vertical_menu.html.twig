@@ -1,0 +1,77 @@
+{% try %}
+{% set menu = gantry.menu.instance(particle) %}
+{% catch %}
+<div class="alert alert-error">{{ e.getMessage }}</div>
+{% endtry %}
+
+{% macro displayTitle(item) %}
+    {% if not item.icon_only or not (item.image or item.icon) %}
+        <span class="g-menu-item-title">{{ item.title|e }}</span>
+        {% if item.subtitle %}
+            <span class="g-menu-item-subtitle">{{ item.subtitle|e }}</span>
+        {% endif %}
+    {% endif %}
+{% endmacro %}
+
+{% macro displayItem(item, menu, context) %}
+    {% if item.visible and item.enabled and enabled|default(1) and item.type != 'particle' %}
+        {% set title = item.icon_only or item.link_title ? ' title="' ~ item.link_title|default(item.title)|e ~ '"' %}
+        {% set active = menu.isActive(item) ? ' active' %}
+        {% set dropdown = item.level == 1 ? ' g-' ~ item.getDropdown()|e %}
+        {% set parent = item.children ? ' g-parent' %}
+        {% set target = item.target != '_self' ? ' target="' ~ item.target|e ~ '"' %}
+        {% set rel = item.rel ? ' rel="' ~ item.rel ~ '"' %}
+
+        <li class="g-menu-item g-menu-item-type-{{ item.type|e }} g-menu-item-{{ item.id|e }}{% if not item.dropdown_hide %}{{ parent|raw }}{% endif %}{{ active|raw }}{{ dropdown|raw }} {% if item.url and item.children %}{% if not item.dropdown_hide %}g-menu-item-link-parent{% endif %}{% endif %} {{ item.class|e|default('') }}"
+                {%- if context.particle.renderTitles|default(0) %} title="{{ item.title|e }}"{% endif %}>
+            {% if item.url %}
+                {% set tag = 'a' %}
+                <{{ tag }} class="g-menu-item-container{{ item.anchor_class ? ' ' ~ item.anchor_class }}" href="{{ item.url|e }}{{ item.hash ? item.hash|e : '' }}"{{ (title ~ target ~ rel)|raw }}>
+            {% else %}
+                {% set tag = 'div' %}
+                <{{ tag }} class="g-menu-item-container{{ item.anchor_class ? ' ' ~ item.anchor_class }}">
+            {% endif %}
+
+            {% if item.image %}
+                <img src="{{ url(item.image)|e }}" alt="{{ item.title|e }}" />
+            {% elseif item.icon %}
+                <i class="{{ item.icon|e }}"></i>
+            {% endif %}
+
+            {% if item.url %}
+                <span class="g-menu-item-content">
+                {{ _self.displayTitle(item) }}
+                </span>
+                {% if (item.children) and not item.dropdown_hide -%}
+                    <span class="g-menu-parent-indicator"></span>
+                {%- endif %}
+            {% else %}
+                {% if item.type == 'heading' %}
+                    <span class="g-nav-header g-menu-item-content"{{ title|raw }}>{{ _self.displayTitle(item) }}</span>
+                {% else %}
+                    <span class="g-separator g-menu-item-content"{{ title|raw }}>{{ _self.displayTitle(item) }}</span>
+                {% endif %}
+            {% endif %}
+            </{{ tag }}>
+            {% if (item.children) and not item.dropdown_hide %}
+                <ul>
+                    {{ _self.displayItems(item, menu, context) }}
+                </ul>
+            {%- endif %}
+        </li>
+    {% endif %}
+{% endmacro %}
+
+{% macro displayItems(items, menu, context) %}
+    {% for item in items %}
+        {{ _self.displayItem(item, menu, context) }}
+    {% endfor %}
+{% endmacro %}
+
+{% if menu.root.count() %}
+    <nav class="g-nav" role="navigation">
+        <ul class="g-toplevel">
+            {{ _self.displayItems(menu.root, menu, _context) }}
+        </ul>
+    </nav>
+{% endif %}

@@ -1,0 +1,181 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: pricing
+  timestamp: 1496332897
+layout:
+  /header/:
+    -
+      - system-messages-7386
+    -
+      - 'logo-5492 56'
+      - 'iconmenu-6259 44'
+  /navigation/:
+    -
+      - 'menu-6122 80'
+      - 'social-9044 20'
+  /showcase/:
+    -
+      - custom-4466
+  /container-2442/:
+    -
+      -
+        'mainbar 67':
+          -
+            - 'custom-7952 33.3'
+            - 'custom-3131 33.3'
+            - 'custom-5536 33.3'
+          -
+            - custom-2701
+          -
+            - 'infolist-8520 50'
+            - 'infolist-3542 50'
+      -
+        'sidebar 33': {  }
+  /extension/:
+    -
+      - custom-9216
+  /footer/:
+    -
+      - 'custom-5638 33.3'
+      - 'newsletter-4197 33.3'
+      - 'custom-4796 33.3'
+  /copyright/:
+    -
+      - copyright-3892
+  offcanvas:
+    -
+      - mobile-menu-7202
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  mainbar:
+    type: section
+  sidebar:
+    type: section
+  container-2442:
+    title: Main
+    attributes:
+      id: g-main
+      boxed: ''
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  logo-5492:
+    block:
+      class: g-logo-block
+  iconmenu-6259:
+    title: 'Icon Menu'
+    block:
+      class: flush
+  menu-6122:
+    block:
+      class: g-menu-block
+  custom-4466:
+    title: 'Awesome Plans'
+    attributes:
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Awesome Plans</h2>\n\t<div class=\"g-layercontent-subtitle\">Choose the Plan That Suits Your Needs</div>\n</div>"
+    block:
+      class: 'flush center'
+  custom-7952:
+    title: Basic
+    attributes:
+      html: "<ul class=\"g-pricingtable\">\n\t<li class=\"g-pricingtable-title\">Basic</li>\n\t<li class=\"g-pricingtable-price\">$28</li>\n\t<li class=\"g-pricingtable-desc\">Globally incubate standards compliant channels</li>\n\t<li class=\"g-pricingtable-item\">5GB Storage</li>\n\t<li class=\"g-pricingtable-item\">10 Users</li>\n\t<li class=\"g-pricingtable-item\">20 Emails</li>\n\t<li class=\"g-pricingtable-item\">Online Store</li>\n\t<li class=\"g-pricingtable-item\">Custom Domain</li>\n\t<li class=\"g-pricingtable-item\">Unlimited Departments</li>\n\t<li class=\"g-pricingtable-cta\"><a href=\"http://www.rockettheme.com/wordpress/themes/aphrodite\" class=\"button button-3\">Sign Up</a></li>\n</ul>"
+  custom-3131:
+    title: Standard
+    attributes:
+      html: "<ul class=\"g-pricingtable\">\n\t<li class=\"g-pricingtable-title\">Standard</li>\n\t<li class=\"g-pricingtable-price\">$58</li>\n\t<li class=\"g-pricingtable-desc\">Globally incubate standards compliant channels</li>\n\t<li class=\"g-pricingtable-item\">5GB Storage</li>\n\t<li class=\"g-pricingtable-item\">10 Users</li>\n\t<li class=\"g-pricingtable-item\">20 Emails</li>\n\t<li class=\"g-pricingtable-item\">Online Store</li>\n\t<li class=\"g-pricingtable-item\">Custom Domain</li>\n\t<li class=\"g-pricingtable-item\">Unlimited Departments</li>\n\t<li class=\"g-pricingtable-cta\"><a href=\"http://www.rockettheme.com/wordpress/themes/aphrodite\" class=\"button button-3\">Sign Up</a></li>\n</ul>"
+  custom-5536:
+    title: Pro
+    attributes:
+      html: "<ul class=\"g-pricingtable\">\n\t<li class=\"g-pricingtable-title\">Pro</li>\n\t<li class=\"g-pricingtable-price\">$88</li>\n\t<li class=\"g-pricingtable-desc\">Globally incubate standards compliant channels</li>\n\t<li class=\"g-pricingtable-item\">5GB Storage</li>\n\t<li class=\"g-pricingtable-item\">10 Users</li>\n\t<li class=\"g-pricingtable-item\">20 Emails</li>\n\t<li class=\"g-pricingtable-item\">Online Store</li>\n\t<li class=\"g-pricingtable-item\">Custom Domain</li>\n\t<li class=\"g-pricingtable-item\">Unlimited Departments</li>\n\t<li class=\"g-pricingtable-cta\"><a href=\"http://www.rockettheme.com/wordpress/themes/aphrodite\" class=\"button button-3\">Sign Up</a></li>\n</ul>"
+  custom-2701:
+    title: 'Try it Out'
+    attributes:
+      html: "<h2 class=\"g-title\">Try it Out for 10 Days Free</h2>\n<ul>\n\t<li>All plans come with awesome support by email and phone. There is no hidden fee!</li>\n\t<li>Free <strong>10 days trial</strong> on all plans. No credit card needed! Need a bigger plan? <a href=\"http://www.rockettheme.com/wordpress/themes/aphrodite\">View Professional Plan</a>.</li>\n</ul>"
+    block:
+      variations: 'box3 rounded'
+  infolist-8520:
+    title: Common
+    attributes:
+      title: 'Common Queries and Questions'
+      infolists:
+        -
+          link: '#'
+          description: 'Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.'
+          title: '1. What prices are our services?'
+        -
+          link: '#'
+          description: 'Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.'
+          title: '2. What is our refund policy?'
+        -
+          link: '#'
+          description: 'Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.'
+          title: '3. What payments methods do we accept?'
+  infolist-3542:
+    title: 'Common Cont.'
+    attributes:
+      title: '<span class="hidden-phone">&nbsp;</span><span class="visible-phone">More Common Queries and Questions</span>'
+      infolists:
+        -
+          link: '#'
+          description: 'Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.'
+          title: '4. What delivery options do we offer?'
+        -
+          link: '#'
+          description: 'Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.'
+          title: '5. What support options are available?'
+        -
+          link: '#'
+          description: 'Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.'
+          title: '6. What additional services are available?'
+  custom-9216:
+    title: 'No Hidden Fees'
+    attributes:
+      html: "<div class=\"g-layercontent\">\n\t<h2 class=\"g-layercontent-title\">No Hidden Fees</h2>\n\t<div class=\"g-layercontent-subtitle\">No Credit Card Required and No Long-Term Contracts</div>\n\t<a href=\"http://www.rockettheme.com/wordpress/themes/aphrodite\" class=\"button button-2\">Sign Up</a>\n</div>"
+    block:
+      class: 'flush center'
+      variations: box1
+  custom-5638:
+    title: 'About Aphrodite'
+    attributes:
+      html: "<h2 class=\"g-title\">About Aphrodite</h2>\n\n<p>All demo content is for sample purposes only, intended to represent a live site.</p>\n\n<p>The sample pages are intended to show how Aphrodite can be constructed on your site.</p>"
+  newsletter-4197:
+    attributes:
+      title: Newsletter
+      headtext: 'Subscribe to our newsletter and stay updated on the latest developments and special offers!'
+      inputboxtext: 'Email Address'
+      buttontext: Join
+      uri: rocketthemeblog
+      buttonclass: 'button button-3'
+  custom-4796:
+    title: 'Sample Sitemap'
+    attributes:
+      html: "<h2 class=\"g-title\">Sample Sitemap</h2>\n\n<div class=\"g-grid\">\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Home</a></li>\n\t\t\t<li><a href=\"#\">Features</a></li>\n\t\t\t<li><a href=\"#\">Typography</a></li>\n\t\t\t<li><a href=\"#\">Particles</a></li>\n\t\t\t<li><a href=\"#\">Variations</a></li>\n\t\t</ul>\t\t\n\t</div>\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Buttons</a></li>\n\t\t\t<li><a href=\"#\">Pages</a></li>\n\t\t\t<li><a href=\"#\">Guide</a></li>\n\t\t\t<li><a href=\"#\">Support</a></li>\n\t\t\t<li><a href=\"#\">Download</a></li>\n\t\t</ul>\t\t\n\t</div>\t\n</div>"
+  copyright-3892:
+    attributes:
+      date:
+        start: '2007'
+      owner: 'RocketTheme, LLC'
+    block:
+      class: center
+  mobile-menu-7202:
+    title: 'Mobile Menu'

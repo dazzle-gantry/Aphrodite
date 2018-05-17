@@ -1,0 +1,108 @@
+.g-layercontent {
+	padding: 2rem;
+	&.g-layercontent-large {
+		padding: 5rem 2rem;
+	}
+	&.g-layercontent-medium {
+		padding: 3rem 2rem;
+	}
+	&.g-layercontent-small {
+		padding: 2rem;
+	}		
+	.g-layercontent-title {
+		margin: 0;
+		line-height: 3rem;
+	}
+	.g-layercontent-subtitle,
+	.g-layercontent-promotext {
+		line-height: 2rem;
+		opacity: 0.8;
+	}
+	.g-layercontent-promotext {
+		font-size: 1rem;
+		font-family: get-font-family($font-family-title);
+        font-weight: $font-weight-bold;
+		margin-top: 1rem;
+	}
+	.button {
+		margin: 1rem 0 0.75rem 0;
+	}
+	& + .g-layercontent {
+		padding-top: 0rem;
+	}
+	.rounded {
+		border-radius: $core-border-radius;
+	}
+}
+$browser-height:    34px;
+$browser-red:       #FF3B47;
+$browser-yellow:    #FFBD00;
+$browser-green:     #00D841;
+$browser-bar:       #eee;
+
+.browser-wrapper {
+    padding-top: $browser-height;
+    border-radius: $core-border-radius;
+    position: relative;
+    vertical-align: bottom;
+	overflow: hidden;
+	
+	&.left {
+		margin-right: 2rem;
+	}
+	&.right {
+		margin-left: 2rem;
+	}
+
+    .browser-bar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: $browser-height;
+        background: $browser-bar;
+        border-radius: $core-border-radius $core-border-radius 0 0;
+        border-bottom: 1px solid darken($browser-bar, 5%);
+
+        .browser-button {
+            top: 8px;
+        }
+
+        .browser-button {
+            position: relative;
+            display: block;
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: $browser-red;
+            border: 1px solid darken($browser-red, 10%);
+            border-radius: 100%;
+            left: 8px;
+
+            &:after, &:before {
+                display: block;
+                content: '';
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                border-radius: 100%;
+                top: -1px;
+            }
+
+            &:after {
+                left: 17px;
+                background: $browser-yellow;
+                border: 1px solid darken($browser-yellow, 10%);
+            }
+
+            &:before {
+                left: 35px;
+                background: $browser-green;
+                border: 1px solid darken($browser-green, 10%);
+            }
+        }
+
+    }
+    img {
+        border-radius: 0 0 $core-border-radius $core-border-radius;
+    }
+}

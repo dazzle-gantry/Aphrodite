@@ -1,0 +1,78 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/offline.png'
+  name: coming_soon
+  timestamp: 1496332897
+layout:
+  /header/:
+    -
+      - system-messages-3481
+    -
+      - logo-9680
+  /navigation/: {  }
+  /showcase/:
+    -
+      - custom-9262
+  /container-6416/:
+    -
+      -
+        'mainbar 67':
+          -
+            - simplecounter-9975
+      -
+        'sidebar 33': {  }
+  /extension/:
+    -
+      - custom-2793
+  /footer/:
+    -
+      - 'custom-7344 50'
+      - 'newsletter-3556 50'
+  /copyright/:
+    -
+      - copyright-7662
+  offcanvas: {  }
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  mainbar:
+    type: section
+  sidebar:
+    type: section
+  container-6416:
+    title: Main
+    attributes:
+      id: g-main
+      boxed: ''
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  logo-9680:
+    block:
+      class: 'g-logo-block center'
+  custom-9262:
+    title: 'Coming Soon'
+    attributes:
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Aphrodite is Coming Soon</h2>\n\t<div class=\"g-layercontent-subtitle\">Good News! Something Awesome is in the Works</div>\n</div>"
+    block:
+      class: 'flush center'
+  simplecounter-9975:
+    title: 'Si

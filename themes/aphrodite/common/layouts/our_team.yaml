@@ -1,0 +1,210 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: our_team
+  timestamp: 1496332897
+layout:
+  /header/:
+    -
+      - system-messages-5040
+    -
+      - 'logo-3013 56'
+      - 'iconmenu-3908 44'
+  /navigation/:
+    -
+      - 'menu-9708 80'
+      - 'social-9025 20'
+  /showcase/:
+    -
+      - custom-4104
+  /container-9829/:
+    -
+      -
+        'mainbar 67':
+          -
+            - 'custom-5348 50'
+            - 'custom-9337 50'
+          -
+            - custom-6509
+          -
+            - 'custom-7321 33.3'
+            - 'custom-7205 33.3'
+            - 'custom-5964 33.3'
+          -
+            - 'custom-7978 33.3'
+            - 'custom-7135 33.3'
+            - 'custom-3199 33.3'
+          -
+            - 'custom-3576 33.3'
+            - 'custom-2893 33.3'
+            - 'custom-2604 33.3'
+      -
+        'sidebar 33': {  }
+  /extension/:
+    -
+      - custom-8015
+  /footer/:
+    -
+      - 'custom-4347 33.3'
+      - 'newsletter-1846 33.3'
+      - 'custom-1927 33.3'
+  /copyright/:
+    -
+      - copyright-4764
+  offcanvas:
+    -
+      - mobile-menu-8636
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  mainbar:
+    type: section
+  sidebar:
+    type: section
+  container-9829:
+    title: Main
+    attributes:
+      id: g-main
+      boxed: ''
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  logo-3013:
+    block:
+      class: g-logo-block
+  iconmenu-3908:
+    title: 'Icon Menu'
+    block:
+      class: flush
+  menu-9708:
+    block:
+      class: g-menu-block
+  custom-4104:
+    title: 'The Team'
+    attributes:
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">The Team</h2>\n\t<div class=\"g-layercontent-subtitle\">Meet the People Behind Aphrodite</div>\n</div>"
+    block:
+      class: 'flush center'
+  custom-5348:
+    title: 'Joe Jensen'
+    attributes:
+      html: "<img src=\"gantry-theme://images/demo/our-team/img-01.jpg\" alt=\"image\">\n\n<h2>Joe Jensen</h2>\n\n<p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>\n\n<p>Image attribution: <a href=\"http://www.flickr.com/photos/astragony/8260117875/sizes/l/\">AMaze by Daniele Zedda</a>.</p>\n\n<div class=\"g-social\">\n\t<a href=\"#\" target=\"_blank\">\n\t    <span class=\"fa fa-twitter fa-fw\"></span>\n\t</a>\n\t<a href=\"#\" target=\"_blank\">\n\t    <span class=\"fa fa-facebook fa-fw\"></span>\n\t</a>\n\t<a href=\"#\" target=\"_blank\">\n\t    <span class=\"fa fa-google fa-fw\"></span>\n\t</a>\n\t<a href=\"#\" target=\"_blank\">\n\t    <span class=\"fa fa-linkedin fa-fw\"></span>\n\t</a>\t\n</div>"
+    block:
+      variations: box3
+  custom-9337:
+    title: 'Paul Lee'
+    attributes:
+      html: "<img src=\"gantry-theme://images/demo/our-team/img-02.jpg\" alt=\"image\">\n\n<h2>Paul Lee</h2>\n\n<p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>\n\n<p>Image attribution: <a href=\"http://www.flickr.com/photos/astragony/4728211246/sizes/l/\">Stare by JohnONolan</a>.</p>\n\n<div class=\"g-social\">\n\t<a href=\"#\" target=\"_blank\">\n\t    <span class=\"fa fa-twitter fa-fw\"></span>\n\t</a>\n\t<a href=\"#\" target=\"_blank\">\n\t    <span class=\"fa fa-facebook fa-fw\"></span>\n\t</a>\n\t<a href=\"#\" target=\"_blank\">\n\t    <span class=\"fa fa-google fa-fw\"></span>\n\t</a>\n\t<a href=\"#\" target=\"_blank\">\n\t    <span class=\"fa fa-linkedin fa-fw\"></span>\n\t</a>\t\n</div>"
+    block:
+      variations: box3
+  custom-6509:
+    title: 'Completely synergize'
+    attributes:
+      html: '<h3><em>"Completely synergize resource sucking relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service." - Robert Smith</em></h3>'
+    block:
+      class: center
+      variations: box2
+  custom-7321:
+    title: 'Louis Wells'
+    attributes:
+      html: "<img src=\"gantry-theme://images/demo/our-team/img-03.jpg\" alt=\"image\">\n\n<h2 class=\"g-title\">Louis Wells</h2>\n\n<p>Collaboratively administrate empowered markets via available great networks.</p>\n\n<p>Image by <a href=\"https://www.flickr.com/photos/johnonolan/5378754404/sizes/l/\">JohnONolan</a>.</p>\n\n<div class=\"g-social\">\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-twitter fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-facebook fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-google fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-linkedin fa-fw\"></span>\n  </a>  \n</div>"
+    block:
+      variations: box3
+  custom-7205:
+    title: 'Sara Valdez'
+    attributes:
+      html: "<img src=\"gantry-theme://images/demo/our-team/img-04.jpg\" alt=\"image\">\n\n<h2 class=\"g-title\">Sara Valdez</h2>\n\n<p>Collaboratively administrate empowered markets via available great networks.</p>\n\n<p>Image by <a href=\"http://www.flickr.com/photos/thomasleuthard/5807793226/sizes/l/\">Thomas Leuthard</a>.</p>\n\n<div class=\"g-social\">\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-twitter fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-facebook fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-google fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-linkedin fa-fw\"></span>\n  </a>  \n</div>"
+    block:
+      variations: box3
+  custom-5964:
+    title: 'Joseph Hart'
+    attributes:
+      html: "<img src=\"gantry-theme://images/demo/our-team/img-05.jpg\" alt=\"image\">\n\n<h2 class=\"g-title\">Joseph Hart</h2>\n\n<p>Collaboratively administrate empowered markets via available great networks.</p>\n\n<p>Image by <a href=\"http://www.flickr.com/photos/astragony/5959165576/sizes/l/\">Daniele Zedda</a>.</p>\n\n<div class=\"g-social\">\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-twitter fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-facebook fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-google fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-linkedin fa-fw\"></span>\n  </a>  \n</div>"
+    block:
+      variations: box3
+  custom-7978:
+    title: 'Amy Guzman'
+    attributes:
+      html: "<img src=\"gantry-theme://images/demo/our-team/img-06.jpg\" alt=\"image\">\n\n<h2 class=\"g-title\">Amy Guzman</h2>\n\n<p>Collaboratively administrate empowered markets via available great networks.</p>\n\n<p>Image by <a href=\"http://www.flickr.com/photos/mr-h/4217144639/sizes/l/\">AllansBrain</a>.</p>\n\n<div class=\"g-social\">\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-twitter fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-facebook fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-google fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-linkedin fa-fw\"></span>\n  </a>  \n</div>"
+    block:
+      variations: box3
+  custom-7135:
+    title: 'Randy Hicks'
+    attributes:
+      html: "<img src=\"gantry-theme://images/demo/our-team/img-07.jpg\" alt=\"image\">\n\n<h2 class=\"g-title\">Randy Hicks</h2>\n\n<p>Collaboratively administrate empowered markets via available great networks.</p>\n\n<p>Image by <a href=\"http://www.flickr.com/photos/carianoff/5327733275/sizes/l/\">carianoff</a>.</p>\n\n<div class=\"g-social\">\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-twitter fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-facebook fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-google fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-linkedin fa-fw\"></span>\n  </a>  \n</div>"
+    block:
+      variations: box3
+  custom-3199:
+    title: 'Grace Patel'
+    attributes:
+      html: "<img src=\"gantry-theme://images/demo/our-team/img-08.jpg\" alt=\"image\">\n\n<h2 class=\"g-title\">Grace Patel</h2>\n\n<p>Collaboratively administrate empowered markets via available great networks.</p>\n\n<p>Image by <a href=\"http://www.flickr.com/photos/carianoff/4070347417/sizes/l/\">carianoff</a>.</p>\n\n<div class=\"g-social\">\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-twitter fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-facebook fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-google fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-linkedin fa-fw\"></span>\n  </a>  \n</div>"
+    block:
+      variations: box3
+  custom-3576:
+    title: 'Roy Fisher'
+    attributes:
+      html: "<img src=\"gantry-theme://images/demo/our-team/img-09.jpg\" alt=\"image\">\n\n<h2 class=\"g-title\">Roy Fisher</h2>\n\n<p>Collaboratively administrate empowered markets via available great networks.</p>\n\n<p>Image by <a href=\"http://www.flickr.com/photos/carianoff/5328421868/sizes/l/\">carianoff</a>.</p>\n\n<div class=\"g-social\">\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-twitter fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-facebook fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-google fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-linkedin fa-fw\"></span>\n  </a>  \n</div>"
+    block:
+      variations: box3
+  custom-2893:
+    title: 'Pamela Little'
+    attributes:
+      html: "<img src=\"gantry-theme://images/demo/our-team/img-10.jpg\" alt=\"image\">\n\n<h2 class=\"g-title\">Pamela Little</h2>\n\n<p>Collaboratively administrate empowered markets via available great networks.</p>\n\n<p>Image by <a href=\"http://www.flickr.com/photos/carianoff/5328368478/sizes/l/\">carianoff</a>.</p>\n\n<div class=\"g-social\">\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-twitter fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-facebook fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-google fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-linkedin fa-fw\"></span>\n  </a>  \n</div>"
+    block:
+      variations: box3
+  custom-2604:
+    title: 'Scott Bell'
+    attributes:
+      html: "<img src=\"gantry-theme://images/demo/our-team/img-11.jpg\" alt=\"image\">\n\n<h2 class=\"g-title\">Scott Bell</h2>\n\n<p>Collaboratively administrate empowered markets via available great networks.</p>\n\n<p>Image by <a href=\"http://www.flickr.com/photos/carianoff/5327739397/sizes/l/\">carianoff</a>.</p>\n\n<div class=\"g-social\">\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-twitter fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-facebook fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-google fa-fw\"></span>\n  </a>\n  <a href=\"#\" target=\"_blank\">\n      <span class=\"fa fa-linkedin fa-fw\"></span>\n  </a>  \n</div>"
+    block:
+      variations: box3
+  custom-8015:
+    title: 'We Are Hiring'
+    attributes:
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">We Are Hiring</h2>\n\t<div class=\"g-layercontent-subtitle\">Join Our Awesome Team with a Great Work Environment</div>\n\t<a href=\"http://www.rockettheme.com/wordpress/themes/aphrodite\" class=\"button button-2\">Join Aphrodite</a>\n</div>"
+    block:
+      class: 'flush center'
+      variations: box1
+  custom-4347:
+    title: 'About Aphrodite'
+    attributes:
+      html: "<h2 class=\"g-title\">About Aphrodite</h2>\n\n<p>All demo content is for sample purposes only, intended to represent a live site.</p>\n\n<p>The sample pages are intended to show how Aphrodite can be constructed on your site.</p>"
+  newsletter-1846:
+    attributes:
+      title: Newsletter
+      headtext: 'Subscribe to our newsletter and stay updated on the latest developments and special offers!'
+      inputboxtext: 'Email Address'
+      buttontext: Join
+      uri: rocketthemeblog
+      buttonclass: 'button button-3'
+  custom-1927:
+    title: 'Sample Sitemap'
+    attributes:
+      html: "<h2 class=\"g-title\">Sample Sitemap</h2>\n\n<div class=\"g-grid\">\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Home</a></li>\n\t\t\t<li><a href=\"#\">Features</a></li>\n\t\t\t<li><a href=\"#\">Typography</a></li>\n\t\t\t<li><a href=\"#\">Particles</a></li>\n\t\t\t<li><a href=\"#\">Variations</a></li>\n\t\t</ul>\t\t\n\t</div>\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Buttons</a></li>\n\t\t\t<li><a href=\"#\">Pages</a></li>\n\t\t\t<li><a href=\"#\">Guide</a></li>\n\t\t\t<li><a href=\"#\">Support</a></li>\n\t\t\t<li><a href=\"#\">Download</a></li>\n\t\t</ul>\t\t\n\t</div>\t\n</div>"
+  copyright-4764:
+    attributes:
+      date:
+        start: '2007'
+      owner: 'RocketTheme, LLC'
+    block:
+      class: center
+  mobile-menu-8636:
+    title: 'Mobile Menu'

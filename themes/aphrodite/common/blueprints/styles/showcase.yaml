@@ -1,0 +1,15 @@
+name: Showcase Colors
+description: Showcase colors for the Aphrodite theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Background
+      default: "#23262f"
+    text-color:
+      type: input.colorpicker
+      label: text
+      default: "#ffffff"

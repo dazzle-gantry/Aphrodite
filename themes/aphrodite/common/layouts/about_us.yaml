@@ -1,0 +1,226 @@
+
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/2-col-right.png'
+  name: pages_-_about_us
+  timestamp: 1496309260
+layout:
+  /header/:
+    -
+      - system-messages-7321
+    -
+      - 'logo-4988 56'
+      - 'iconmenu-5299 44'
+  /navigation/:
+    -
+      - 'menu-6118 80'
+      - 'social-2489 20'
+  /showcase/:
+    -
+      - custom-1374
+  /container-2126/:
+    -
+      -
+        'mainbar 67':
+          -
+            - 'custom-3912 33.3'
+            - 'custom-1844 33.3'
+            - 'custom-5985 33.3'
+          -
+            - custom-2212
+          -
+            - custom-9045
+          -
+            - 'custom-8068 33.3'
+            - 'custom-2507 33.3'
+            - 'custom-9611 33.3'
+          -
+            - 'infolist-6811 33.3'
+            - 'infolist-9925 33.3'
+            - 'infolist-5312 33.3'
+      -
+        'sidebar 33': {  }
+  /extension/:
+    -
+      - custom-3911
+  /footer/:
+    -
+      - 'custom-7013 33.3'
+      - 'newsletter-7239 33.3'
+      - 'custom-6774 33.3'
+  /copyright/:
+    -
+      - copyright-4956
+  offcanvas:
+    -
+      - mobile-menu-4770
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  mainbar:
+    type: section
+  sidebar:
+    type: section
+  container-2126:
+    title: Main
+    attributes:
+      id: g-main
+      boxed: ''
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  logo-4988:
+    block:
+      class: g-logo-block
+  iconmenu-5299:
+    title: 'Icon Menu'
+    block:
+      class: flush
+  menu-6118:
+    block:
+      class: g-menu-block
+  custom-1374:
+    title: 'About Us'
+    attributes:
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">About Us</h2>\n\t<div class=\"g-layercontent-subtitle\">Who We Are</div>\n</div>"
+    block:
+      class: 'flush center'
+  custom-3912:
+    title: 'Our Mission'
+    attributes:
+      html: "<h2 class=\"g-title\">Our Mission</h2>\n<p>Objectively innovate empowered manufactured products whereas parallel platforms. Holistically predominate extensible testing procedures for reliable supply chains.</p>"
+    block:
+      class: 'center nomarginall'
+      variations: box-blue
+  custom-1844:
+    title: 'Our Values'
+    attributes:
+      html: "<h2 class=\"g-title\">Our Values</h2>\n<p>Objectively innovate empowered manufactured products whereas parallel platforms. Holistically predominate extensible testing procedures for reliable supply chains.</p>"
+    block:
+      class: 'center nomarginall'
+      variations: box1
+  custom-5985:
+    title: 'Our Solutions'
+    attributes:
+      html: "<h2 class=\"g-title\">Our Solution</h2>\n<p>Objectively innovate empowered manufactured products whereas parallel platforms. Holistically predominate extensible testing procedures for reliable supply chains.</p>"
+    block:
+      class: 'center nomarginall'
+      variations: box-orange
+  custom-2212:
+    title: 'Why You Should Join Us'
+    attributes:
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Why You Should Join Us</h2>\n\t<div class=\"g-layercontent-subtitle\">Choose the theme that suits your needs. 100% satisfaction guaranteed.</div>\n</div>"
+    block:
+      class: 'flush center'
+      variations: box2
+  custom-9045:
+    title: 'Introduction - Mission - Business'
+    attributes:
+      html: "<div class=\"g-grid center\">\n    <div class=\"g-block\">\n        <div class=\"g-content\">\n          <img src=\"gantry-theme://images/demo/about-us/img-01.jpg\" alt=\"image\">\n          <h2 class=\"g-title\">Introduction</h2>\n        </div>\n    </div>\n    <div class=\"g-block\">\n        <div class=\"g-content\">\n          <img src=\"gantry-theme://images/demo/about-us/img-02.jpg\" alt=\"image\">\n          <h2 class=\"g-title\">Mission</h2>\n        </div>\n    </div>\n    <div class=\"g-block\">\n        <div class=\"g-content\">\n          <img src=\"gantry-theme://images/demo/about-us/img-03.jpg\" alt=\"image\">\n          <h2 class=\"g-title\">Business</h2>\n        </div>\n    </div>\n</div>"
+    block:
+      class: flush
+      variations: box2
+  custom-8068:
+    title: Sophisticated
+    attributes:
+      html: "<h2 class=\"g-title\"><span class=\"fa fa-dashboard fa-fw fa-3x\"></span> Sophisticated</h2>\n<p>Dynamically procrastinate B2C users after installed base benefits.</p>"
+    block:
+      variations: box3
+  custom-2507:
+    title: Responsive
+    attributes:
+      html: "<h2 class=\"g-title\"><span class=\"fa fa-arrows-alt fa-fw fa-3x\"></span> Responsive</h2>\n<p>Dynamically procrastinate B2C users after installed base benefits.</p>"
+    block:
+      variations: box3
+  custom-9611:
+    title: Powerful
+    attributes:
+      html: "<h2 class=\"g-title\"><span class=\"fa fa-sliders fa-fw fa-3x\"></span> Powerful</h2>\n<p>Dynamically procrastinate B2C users after installed base benefits.</p>"
+    block:
+      variations: box3
+  infolist-6811:
+    title: 'Modern Design'
+    attributes:
+      infolists:
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: 'Modern Design'
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: 'Awesome Support'
+  infolist-9925:
+    title: 'Huge Features'
+    attributes:
+      infolists:
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: 'Huge Features'
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: 'Demo Content'
+  infolist-5312:
+    title: 'Multi Purpose'
+    attributes:
+      infolists:
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: 'Multi Purpose'
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: 'Gantry 5'
+  custom-3911:
+    title: 'We Always Try to Create a Difference'
+    attributes:
+      html: "<div class=\"g-layercontent\">\n\t<h2 class=\"g-layercontent-title\">We Always Try to Create a Difference</h2>\n\t<div class=\"g-layercontent-subtitle\">Versatile and Flexible Features Powered by the Gantry Framework.</div>\n\t<a href=\"http://www.rockettheme.com/wordpress/themes/aphrodite\" class=\"button button-2\">Download Aphrodite</a>\n</div>"
+    block:
+      class: 'flush center'
+      variations: box1
+  custom-7013:
+    title: 'About Aphrodite'
+    attributes:
+      html: "<h2 class=\"g-title\">About Aphrodite</h2>\n\n<p>All demo content is for sample purposes only, intended to represent a live site.</p>\n\n<p>The sample pages are intended to show how Aphrodite can be constructed on your site.</p>"
+  newsletter-7239:
+    attributes:
+      title: Newsletter
+      headtext: 'Subscribe to our newsletter and stay updated on the latest developments and special offers!'
+      inputboxtext: 'Email Address'
+      buttontext: Join
+      uri: rocketthemeblog
+      buttonclass: 'button button-3'
+  custom-6774:
+    title: 'Sample Sitemap'
+    attributes:
+      html: "<h2 class=\"g-title\">Sample Sitemap</h2>\n\n<div class=\"g-grid\">\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Home</a></li>\n\t\t\t<li><a href=\"#\">Features</a></li>\n\t\t\t<li><a href=\"#\">Typography</a></li>\n\t\t\t<li><a href=\"#\">Particles</a></li>\n\t\t\t<li><a href=\"#\">Variations</a></li>\n\t\t</ul>\t\t\n\t</div>\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Buttons</a></li>\n\t\t\t<li><a href=\"#\">Pages</a></li>\n\t\t\t<li><a href=\"#\">Guide</a></li>\n\t\t\t<li><a href=\"#\">Support</a></li>\n\t\t\t<li><a href=\"#\">Download</a></li>\n\t\t</ul>\t\t\n\t</div>\t\n</div>"
+  copyright-4956:
+    attributes:
+      date:
+        start: '2007'
+      owner: 'RocketTheme, LLC'
+    block:
+      class: center
+  mobile-menu-4770:
+    title: 'Mobile Menu'

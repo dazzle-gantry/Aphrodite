@@ -1,0 +1,295 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/2-col-right.png'
+  name: portfolio
+  timestamp: 1496332897
+layout:
+  /header/:
+    -
+      - system-messages-2393
+    -
+      - 'logo-1247 56'
+      - 'iconmenu-6255 44'
+  /navigation/:
+    -
+      - 'menu-4628 80'
+      - 'social-9918 20'
+  /showcase/:
+    -
+      - custom-5595
+  /container-5400/:
+    -
+      -
+        'mainbar 67':
+          -
+            - 'contentlist-8674 67'
+            - 'custom-1803 33'
+          -
+            - 'promoimage-4042 33.3'
+            - 'promoimage-3684 33.3'
+            - 'promoimage-3195 33.3'
+          -
+            - 'promoimage-4589 33.3'
+            - 'promoimage-6050 33.3'
+            - 'promoimage-2588 33.3'
+          -
+            - 'infolist-4363 33.3'
+            - 'infolist-3250 33.3'
+            - 'infolist-4570 33.3'
+      -
+        'sidebar 33': {  }
+  /extension/:
+    -
+      - custom-2253
+  /footer/:
+    -
+      - 'custom-6292 33.3'
+      - 'newsletter-6099 33.3'
+      - 'custom-4901 33.3'
+  /copyright/:
+    -
+      - copyright-4231
+  offcanvas:
+    -
+      - mobile-menu-6760
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  mainbar:
+    type: section
+  sidebar:
+    type: section
+  container-5400:
+    title: Main
+    attributes:
+      id: g-main
+      boxed: ''
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  logo-1247:
+    block:
+      class: g-logo-block
+  iconmenu-6255:
+    title: 'Icon Menu'
+    block:
+      class: flush
+  menu-4628:
+    block:
+      class: g-menu-block
+  custom-5595:
+    title: Portfolio
+    attributes:
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">Portfolio</h2>\n\t<div class=\"g-layercontent-subtitle\">What We Have Already Done</div>\n</div>"
+    block:
+      class: 'flush center'
+  contentlist-8674:
+    title: 'Aphrodite Premium Project'
+    attributes:
+      image: 'gantry-theme://images/demo/portfolio/img-01.jpg'
+      imagetag: 'On Going'
+      headline: 'Aphrodite Premium Project'
+      subtitle: 'Website Redesign and Publishing'
+      desc: 'Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.'
+      readmore: 'Check Project'
+      link: '#'
+      cols: g-listgrid-2cols
+      listgriditems:
+        -
+          icon: 'fa fa-user fa-fw'
+          text: 'Mr. Great Client'
+          link: '#'
+          title: 'Mr. Great Client'
+        -
+          icon: 'fa fa-check-square-o fa-fw'
+          text: Graphic
+          link: '#'
+          title: Graphic
+        -
+          icon: 'fa fa-calendar fa-fw'
+          text: 01/01/2086
+          link: '#'
+          title: 01/01/2086
+        -
+          icon: 'fa fa-check-square-o fa-fw'
+          text: HTML/CSS
+          link: '#'
+          title: HTML/CSS
+        -
+          icon: 'fa fa-tags fa-fw'
+          text: 'design, cover, logo'
+          link: '#'
+          title: 'design, cover, logo'
+        -
+          icon: 'fa fa-check-square-o fa-fw'
+          text: Gantry
+          link: '#'
+          title: Gantry
+    block:
+      class: nopaddingall
+      variations: 'box2 rounded'
+  custom-1803:
+    title: 'Responsive Layout'
+    attributes:
+      html: "<h2 class=\"g-title\">Responsive Layout</h2>\n<p><img src=\"gantry-theme://images/demo/portfolio/img-02.jpg\" alt=\"image\"></p>\n<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>"
+  promoimage-4042:
+    title: Magazine
+    attributes:
+      title: Magazine
+      image: 'gantry-theme://images/demo/portfolio/img-03.jpg'
+      promoimagetitle: Magazine
+      desc: 'Short project description here'
+      iconbutton: 'fa fa-file-text-o'
+    block:
+      class: center
+  promoimage-3684:
+    title: Logo
+    attributes:
+      title: Logo
+      image: 'gantry-theme://images/demo/portfolio/img-04.jpg'
+      promoimagetitle: Logo
+      desc: 'Short project description here'
+      iconbutton: 'fa fa-file-text-o'
+    block:
+      class: center
+  promoimage-3195:
+    title: Brochure
+    attributes:
+      title: Brochure
+      image: 'gantry-theme://images/demo/portfolio/img-05.jpg'
+      promoimagetitle: Brochure
+      desc: 'Short project description here'
+      iconbutton: 'fa fa-file-text-o'
+    block:
+      class: center
+  promoimage-4589:
+    title: Decorations
+    attributes:
+      title: Decorations
+      image: 'gantry-theme://images/demo/portfolio/img-06.jpg'
+      promoimagetitle: Decorations
+      desc: 'Short project description here'
+      iconbutton: 'fa fa-file-text-o'
+    block:
+      class: center
+  promoimage-6050:
+    title: Illustrations
+    attributes:
+      title: Illustrations
+      image: 'gantry-theme://images/demo/portfolio/img-07.jpg'
+      promoimagetitle: Illustrations
+      desc: 'Short project description here'
+      iconbutton: 'fa fa-file-text-o'
+    block:
+      class: center
+  promoimage-2588:
+    title: Photos
+    attributes:
+      title: Photos
+      image: 'gantry-theme://images/demo/portfolio/img-08.jpg'
+      promoimagetitle: Photos
+      desc: 'Short project description here'
+      iconbutton: 'fa fa-file-text-o'
+    block:
+      class: center
+  infolist-4363:
+    title: 'Upcoming Projects'
+    attributes:
+      title: 'Upcoming Projects'
+      infolists:
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: '404 Pages'
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: Badges
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: Stickers
+  infolist-3250:
+    title: 'Upcoming Projects Cont.'
+    attributes:
+      title: '<span class="hidden-phone">&nbsp;</span><span class="visible-phone">More Upcoming Projects</span>'
+      infolists:
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: Banners
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: Sliders
+        -
+          link: Tables
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: 'New item'
+  infolist-4570:
+    title: 'Upcoming Projects Cont.'
+    attributes:
+      title: '<span class="hidden-phone">&nbsp;</span><span class="visible-phone">More Upcoming Projects</span>'
+      infolists:
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: Forms
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: Newsletter
+        -
+          link: '#'
+          description: 'Collaboratively administrate empowered markets via plug-and-play networks'
+          title: Interfaces
+  custom-2253:
+    title: '100% Satisfaction Guaranteed'
+    attributes:
+      html: "<div class=\"g-layercontent g-layercontent-small\">\n\t<h2 class=\"g-layercontent-title\">100% Satisfaction Guaranteed</h2>\n\t<div class=\"g-layercontent-subtitle\">Will You be the Next to Join Our Happy Clients?</div>\n\t<a href=\"http://www.rockettheme.com/wordpress/themes/aphrodite\" class=\"button button-2\">Join Now</a>\n</div>"
+    block:
+      class: 'flush center'
+      variations: box1
+  custom-6292:
+    title: 'About Aphrodite'
+    attributes:
+      html: "<h2 class=\"g-title\">About Aphrodite</h2>\n\n<p>All demo content is for sample purposes only, intended to represent a live site.</p>\n\n<p>The sample pages are intended to show how Aphrodite can be constructed on your site.</p>"
+  newsletter-6099:
+    attributes:
+      title: Newsletter
+      headtext: 'Subscribe to our newsletter and stay updated on the latest developments and special offers!'
+      inputboxtext: 'Email Address'
+      buttontext: Join
+      uri: rocketthemeblog
+      buttonclass: 'button button-3'
+  custom-4901:
+    title: 'Sample Sitemap'
+    attributes:
+      html: "<h2 class=\"g-title\">Sample Sitemap</h2>\n\n<div class=\"g-grid\">\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Home</a></li>\n\t\t\t<li><a href=\"#\">Features</a></li>\n\t\t\t<li><a href=\"#\">Typography</a></li>\n\t\t\t<li><a href=\"#\">Particles</a></li>\n\t\t\t<li><a href=\"#\">Variations</a></li>\n\t\t</ul>\t\t\n\t</div>\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Buttons</a></li>\n\t\t\t<li><a href=\"#\">Pages</a></li>\n\t\t\t<li><a href=\"#\">Guide</a></li>\n\t\t\t<li><a href=\"#\">Support</a></li>\n\t\t\t<li><a href=\"#\">Download</a></li>\n\t\t</ul>\t\t\n\t</div>\t\n</div>"
+  copyright-4231:
+    attributes:
+      date:
+        start: '2007'
+      owner: 'RocketTheme, LLC'
+    block:
+      class: center
+  mobile-menu-6760:
+    title: 'Mobile Menu'

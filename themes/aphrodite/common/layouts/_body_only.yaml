@@ -1,0 +1,110 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1496332897
+layout:
+  /header/:
+    -
+      - system-messages-7809
+    -
+      - 'logo-2862 56'
+      - 'iconmenu-2725 44'
+  /navigation/:
+    -
+      - 'menu-5124 80'
+      - 'social-9614 20'
+  /showcase/: {  }
+  /container-1153/:
+    -
+      -
+        'mainbar 67':
+          -
+            - system-content-4214
+      -
+        'sidebar 33': {  }
+  /extension/: {  }
+  /footer/:
+    -
+      - 'custom-4773 33.3'
+      - 'newsletter-7240 33.3'
+      - 'custom-1535 33.3'
+  /copyright/:
+    -
+      - copyright-4100
+  offcanvas:
+    -
+      - mobile-menu-7482
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      class: box1
+      boxed: ''
+  mainbar:
+    type: section
+  sidebar:
+    type: section
+  container-1153:
+    title: Main
+    attributes:
+      id: g-main
+      boxed: ''
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  logo-2862:
+    block:
+      class: g-logo-block
+  iconmenu-2725:
+    title: 'Icon Menu'
+    block:
+      class: flush
+  menu-5124:
+    block:
+      class: g-menu-block
+  system-content-4214:
+    block:
+      class: nomarginall
+      variations: box2
+  custom-4773:
+    title: 'About Aphrodite'
+    attributes:
+      html: "<h2 class=\"g-title\">About Aphrodite</h2>\n\n<p>All demo content is for sample purposes only, intended to represent a live site.</p>\n\n<p>The sample pages are intended to show how Aphrodite can be constructed on your site.</p>"
+  newsletter-7240:
+    attributes:
+      title: Newsletter
+      headtext: 'Subscribe to our newsletter and stay updated on the latest developments and special offers!'
+      inputboxtext: 'Email Address'
+      buttontext: Join
+      uri: rocketthemeblog
+      buttonclass: 'button button-3'
+  custom-1535:
+    title: 'Sample Sitemap'
+    attributes:
+      html: "<h2 class=\"g-title\">Sample Sitemap</h2>\n\n<div class=\"g-grid\">\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Home</a></li>\n\t\t\t<li><a href=\"#\">Features</a></li>\n\t\t\t<li><a href=\"#\">Typography</a></li>\n\t\t\t<li><a href=\"#\">Particles</a></li>\n\t\t\t<li><a href=\"#\">Variations</a></li>\n\t\t</ul>\t\t\n\t</div>\n\t<div class=\"g-block\">\n\t\t<ul class=\"nomarginall noliststyle\">\n\t\t\t<li><a href=\"#\">Buttons</a></li>\n\t\t\t<li><a href=\"#\">Pages</a></li>\n\t\t\t<li><a href=\"#\">Guide</a></li>\n\t\t\t<li><a href=\"#\">Support</a></li>\n\t\t\t<li><a href=\"#\">Download</a></li>\n\t\t</ul>\t\t\n\t</div>\t\n</div>"
+  copyright-4100:
+    attributes:
+      date:
+        start: '2007'
+      owner: 'RocketTheme, LLC'
+    block:
+      class: center
+  mobile-menu-7482:
+    title: 'Mobile Menu'

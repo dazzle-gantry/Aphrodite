@@ -1,0 +1,54 @@
+#g-showcase {
+    .g-container {
+        background: $showcase-background;
+        color: $showcase-text-color;
+    }
+}
+
+@media print {
+	#g-showcase {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}
+
+// Demo Showcase
+.fp-showcase-image, .fp-roksprocket-showcase-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	.sprocket-features-img-container, .g-owlcarousel-item-image {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+// Demo Plain Aphrodite
+.fp-showcase-image {
+	@for $i from 1 through 6 {
+		.g-style-preset#{$i} &, body & {
+			background-image: url("gantry-theme://images/demo/home/showcase/roksprocket-showcase/img-01-dark.jpg");
+		}
+	}
+	@for $i from 7 through 10 {
+		.g-style-preset#{$i} & {
+			background-image: url("gantry-theme://images/demo/home/showcase/roksprocket-showcase/img-01-light.jpg");
+		}
+	}
+}
+
+// Demo RocketLauncher Aphrodite
+@for $x from 1 through 3 {
+	.fp-roksprocket-showcase-image .sprocket-features-index-#{$x} .sprocket-features-img-container,
+    .fp-showcase-image .g-owlcarousel-features-index-#{$x} .g-owlcarousel-item-image {
+		@for $i from 1 through 6 {
+			.g-style-preset#{$i} &, body & {
+				background-image: url("gantry-theme://images/demo/home/showcase/roksprocket-showcase/img-0#{$x}-dark.jpg");
+			}
+		}
+		@for $i from 7 through 10 {
+			.g-style-preset#{$i} & {
+				background-image: url("gantry-theme://images/demo/home/showcase/roksprocket-showcase/img-0#{$x}-light.jpg");
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+name: Navigation Styles
+description: Navigation section styles for the Aphrodite theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Background
+      default: "#353535"
+    text-color:
+      type: input.colorpicker
+      label: Text
+      default: "#828282"

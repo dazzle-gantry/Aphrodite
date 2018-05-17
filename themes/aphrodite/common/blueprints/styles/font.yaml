@@ -1,0 +1,19 @@
+name: Font Families
+description: Font families for the Aphrodite theme
+type: core
+
+form:
+  fields:
+
+    family-default:
+      type: input.fonts
+      label: Body Font
+      default: 'Raleway, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+    family-title:
+      type: input.fonts
+      label: Title Font
+      default: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+    family-promo:
+      type: input.fonts
+      label: Promo Font
+      default: 'Lato, Helvetica, Tahoma, Geneva, Arial, sans-serif'

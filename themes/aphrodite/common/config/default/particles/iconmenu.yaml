@@ -1,0 +1,24 @@
+enabled: '1'
+class: ''
+target: _parent
+items:
+  -
+    icon: 'fa fa-diamond'
+    text: Features
+    link: 'http://docs.gantry.org/gantry5/basics/key-features'
+    name: Features
+  -
+    icon: 'fa fa-rocket'
+    text: 'Gantry 5'
+    link: 'http://www.gantry.org/'
+    name: 'Gantry 5'
+  -
+    icon: 'fa fa-gear'
+    text: Addons
+    link: 'http://docs.gantry.org/gantry5/particles'
+    name: Addons
+  -
+    icon: 'fa fa-cloud-download'
+    text: Download
+    link: 'http://www.rockettheme.com/joomla/templates/aphrodite'
+    name: Download

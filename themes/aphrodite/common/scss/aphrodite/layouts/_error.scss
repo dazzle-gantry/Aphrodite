@@ -1,0 +1,8 @@
+.g-error {
+	> .g-content {
+		padding: ($content-padding * 5) 0;
+	}
+	h1 {
+		font-size: $core-font-size + 2;
+	}
+}

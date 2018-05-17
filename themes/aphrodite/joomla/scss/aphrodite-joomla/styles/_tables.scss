@@ -1,0 +1,13 @@
+.view-articles {
+    table {
+        border: 1px solid darken($white, 10%);
+    }
+
+    th {
+        background: darken($white, 15%);
+    }
+
+    td {
+        border: 1px solid darken($white, 10%);
+    }
+}

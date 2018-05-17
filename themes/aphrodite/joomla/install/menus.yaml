@@ -1,0 +1,9 @@
+aphrodite-theme:
+  title: 'Aphrodite Theme'
+  description: 'Sample menu for Aphrodite theme.'
+
+  items:
+    aphrodite:
+      title: 'Home'
+      outline: home
+      home: 1

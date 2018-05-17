@@ -1,0 +1,162 @@
+.button {
+	display: inline-block;
+	font-family: get-font-family($font-family-title);
+	font-weight: $font-weight-bold;
+	border-radius: $border-radius;
+	background: darken($accent-color-1, 10%);
+	color: $white;
+	font-size: $core-font-size - 0.1;
+	border: 2px solid transparent;
+	margin-bottom: 0.2rem;
+	padding: 0.375rem 1.25rem;
+	vertical-align: middle;
+	text-shadow: none;
+	@include transition(all 0.2s);
+	&:hover, &:active, &:focus {
+		background: darken($accent-color-1, 15%);
+		color: $white;
+	}
+	&.button-square {
+		border-radius: 0;
+		&[class*="button"] {
+			border-radius: 0;
+		}
+	}
+	&.button-block {
+		display: block;
+	}
+	&.button-xlarge {
+		font-size: $core-font-size + 0.4;
+	}
+	&.button-large {
+		font-size: $core-font-size + 0.2;
+	}
+	&.button-medium {
+		font-size: $core-font-size;
+	}
+	&.button-small {
+		font-size: $core-font-size - 0.2;		
+	}
+	&.button-xsmall {
+		font-size: $core-font-size - 0.4;
+	}
+	&.button-2 {
+		border-radius: 1.5rem;
+	}
+	&.button-3,
+	&.button-4,
+	&.button-grey,
+	&.button-pink,
+	&.button-red,
+	&.button-purple,
+	&.button-orange,
+	&.button-blue {
+		&.button-3, &.button-4 {
+			background: transparent;
+			&:hover, &:active, &:focus {
+				background: transparent;
+			}
+		}
+	}
+	&.button-3 {
+		border-radius: 1.5rem;
+		color: $accent-color-1;
+		border: 2px solid $accent-color-1;
+		&:hover, &:active, &:focus {
+			border: 2px solid darken($accent-color-1, 15%);
+			color: darken($accent-color-1, 15%);
+		}
+	}	
+	&.button-4 {
+		color: $accent-color-1;
+		border: 2px solid $accent-color-1;
+		&:hover, &:active, &:focus {
+			border: 2px solid darken($accent-color-1, 15%);
+			color: darken($accent-color-1, 15%);
+		}
+	}
+	&.button-grey {
+		background: $box-grey-background;
+		&.button-3, &.button-4 {
+			color: $box-grey-background;
+			border: 2px solid $box-grey-background;
+			&:hover, &:active, &:focus {
+				border: 2px solid darken($box-grey-background, 15%);
+				color: darken($box-grey-background, 15%);
+			}
+		}
+		&:hover, &:active, &:focus {
+			background: darken($box-grey-background, 15%);
+		}
+	}
+	&.button-pink {
+		background: $box-pink-background;
+		&.button-3, &.button-4 {
+			color: $box-pink-background;
+			border: 2px solid $box-pink-background;
+			&:hover, &:active, &:focus {
+				border: 2px solid darken($box-pink-background, 15%);
+				color: darken($box-pink-background, 15%);
+			}
+		}
+		&:hover, &:active, &:focus {
+			background: darken($box-pink-background, 15%);
+		}
+	}
+	&.button-red {
+		background: $box-red-background;
+		&.button-3, &.button-4 {
+			color: $box-red-background;
+			border: 2px solid $box-red-background;
+			&:hover, &:active, &:focus {
+				border: 2px solid darken($box-red-background, 15%);
+				color: darken($box-red-background, 15%);
+			}
+		}
+		&:hover, &:active, &:focus {
+			background: darken($box-red-background, 15%);
+		}
+	}
+	&.button-purple {
+		background: $box-purple-background;
+		&.button-3, &.button-4 {
+			color: $box-purple-background;
+			border: 2px solid $box-purple-background;
+			&:hover, &:active, &:focus {
+				border: 2px solid darken($box-purple-background, 15%);
+				color: darken($box-purple-background, 15%);
+			}
+		}
+		&:hover, &:active, &:focus {
+			background: darken($box-purple-background, 15%);
+		}
+	}
+	&.button-orange {
+		background: $box-orange-background;
+		&.button-3, &.button-4 {
+			color: $box-orange-background;
+			border: 2px solid $box-orange-background;
+			&:hover, &:active, &:focus {
+				border: 2px solid darken($box-orange-background, 15%);
+				color: darken($box-orange-background, 15%);
+			}
+		}
+		&:hover, &:active, &:focus {
+			background: darken($box-orange-background, 15%);
+		}
+	}
+	&.button-blue {
+		background: $box-blue-background;
+		&.button-3, &.button-4 {
+			color: $box-blue-background;
+			border: 2px solid $box-blue-background;
+			&:hover, &:active, &:focus {
+				border: 2px solid darken($box-blue-background, 15%);
+				color: darken($box-blue-background, 15%);
+			}
+		}
+		&:hover, &:active, &:focus {
+			background: darken($box-blue-background, 15%);
+		}
+	}
+}

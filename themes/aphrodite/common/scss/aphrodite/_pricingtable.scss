@@ -1,0 +1,29 @@
+.g-pricingtable {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	border: 1px solid $rule-color;
+	border-radius: $border-radius;
+	li {
+		padding: $content-padding;
+		border-bottom: 1px solid $rule-color;
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+	.g-pricingtable-title {
+		background: $accent-color-1;
+		color: $white;
+		font-size: $core-font-size + 0.8;
+		line-height: $core-line-height - 0.3;
+		font-family: get-font-family($font-family-promo);	
+		font-weight: $font-weight-ultrabold;
+		text-transform: uppercase;	
+	}
+	.g-pricingtable-price {
+		color: $accent-color-1;
+		font-size: $core-font-size + 3;
+		font-family: get-font-family($font-family-title);
+		font-weight: $font-weight-bold;
+	}
+}

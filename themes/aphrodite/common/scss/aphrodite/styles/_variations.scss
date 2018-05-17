@@ -1,0 +1,238 @@
+.flush {
+	> .g-content {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.nopaddingall {
+	> .g-content {
+		padding: 0;
+	}	
+}
+
+.nomarginall {
+	> .g-content {
+		margin: 0;
+	}	
+}
+
+.moduletable, .widget {
+    &[class*="box"] {
+      padding: $content-padding;
+      margin: $content-margin;
+    }
+    &[class*="title"] {
+      .g-title {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+      }
+    }
+}
+
+.box1 {
+  &.moduletable, &.widget,
+	&.g-outer-box {
+		background: $box1-background;
+	}
+  &.moduletable, &.widget,
+  > .g-content {
+		background: $box1-background;
+		color: darken($box1-background, 35%);
+		a {
+			color: lighten($box1-background, 35%);
+		}
+	}	
+}
+
+.box2 {
+  &.moduletable, &.widget,
+	&.g-outer-box {
+		background: $box2-background;
+	}
+  &.moduletable, &.widget,
+  > .g-content {
+		background: $box2-background;
+		color: darken($box2-background, 50%);
+	}
+}
+
+.box3 {
+  &.moduletable, &.widget,
+	&.g-outer-box {
+		background: $box3-background;
+	}
+  &.moduletable, &.widget,
+  > .g-content {
+		background: $box3-background;
+		color: $base-text-color;
+	}
+}
+
+.box4 {
+  &.moduletable, &.widget,
+	&.g-outer-box {
+		background: $box4-background;
+	}
+  &.moduletable, &.widget,
+  > .g-content {
+		background: $box4-background;
+		color: $base-text-color;
+	}
+}
+
+.box-grey, .box-pink, .box-red, .box-purple, .box-blue, .box-orange {
+	color: $white;
+}
+
+.box-grey {
+  &.moduletable, &.widget,
+	&.g-outer-box {
+		background: $box-grey-background;
+	}
+  &.moduletable, &.widget,
+  > .g-content {
+		background: $box-grey-background;
+	}
+	.button {
+		background: darken($box-grey-background, 10%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-grey-background, 10%);
+		}
+	}
+	a {
+		color: lighten($box-grey-background, 25%);
+	}
+}
+
+.box-pink {
+  &.moduletable, &.widget,
+	&.g-outer-box {
+		background: $box-pink-background;
+	}
+  &.moduletable, &.widget,
+  > .g-content {
+		background: $box-pink-background;
+	}
+	.button {
+		background: darken($box-pink-background, 10%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-pink-background, 10%);
+		}
+	}
+	a {
+		color: lighten($box-pink-background, 25%);
+	}
+}
+
+.box-red {
+  &.moduletable, &.widget,
+	&.g-outer-box {
+		background: $box-red-background;
+	}
+  &.moduletable, &.widget,
+  > .g-content {
+		background: $box-red-background;
+	}
+	.button {
+		background: darken($box-red-background, 10%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-red-background, 10%);
+		}
+	}
+	a {
+		color: lighten($box-red-background, 25%);
+	}
+}
+
+.box-purple {
+  &.moduletable, &.widget,
+	&.g-outer-box {
+		background: $box-purple-background;
+	}
+  &.moduletable, &.widget,
+  > .g-content {
+		background: $box-purple-background;
+	}
+	.button {
+		background: darken($box-purple-background, 10%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-purple-background, 10%);
+		}
+	}
+	a {
+		color: lighten($box-purple-background, 25%);
+	}
+}
+
+.box-blue {
+  &.moduletable, &.widget,
+	&.g-outer-box {
+		background: $box-blue-background;
+	}
+  &.moduletable, &.widget,
+  > .g-content {
+		background: $box-blue-background;
+	}
+	.button {
+		background: darken($box-blue-background, 10%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-blue-background, 10%);
+		}
+	}
+	a {
+		color: lighten($box-blue-background, 25%);
+	}
+}
+
+.box-orange {
+  &.moduletable, &.widget,
+	&.g-outer-box {
+		background: $box-orange-background;
+	}
+  &.moduletable, &.widget,
+  > .g-content {
+		background: $box-orange-background;
+	}
+	.button {
+		background: darken($box-orange-background, 10%);
+		&:hover, &:active, &:focus {
+			background: lighten($box-orange-background, 10%);
+		}
+	}
+	a {
+		color: lighten($box-orange-background, 25%);
+	}
+}
+
+.shadow {
+	.g-content {
+		box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	}
+}
+
+.shadow2 {
+	.g-content {
+		box-shadow: 0 0 4px rgba(0,0,0,0.15);
+	}
+}
+
+.disabled {
+	.g-content {
+		opacity: 0.4;
+	}
+}
+
+.square {
+	.g-content {
+		border-radius: none;
+	}
+}
+
+.rounded {
+	.g-content {
+		border-radius: $core-border-radius;
+		overflow: hidden;
+	}
+}

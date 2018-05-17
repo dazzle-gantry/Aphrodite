@@ -1,0 +1,505 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1463470148
+layout:
+  /header/:
+    -
+      - system-messages-9396
+    -
+      - 'logo-8989 56'
+      - 'iconmenu-6892 44'
+  /navigation/:
+    -
+      - 'menu-1125 80'
+      - 'social-6590 20'
+  /showcase/:
+    -
+      - featuresslider-3827
+  /container-3206/:
+    -
+      -
+        'mainfeature 67':
+          -
+            - contentlist-5190
+      -
+        'sidefeature 33':
+          -
+            - search-1519
+          -
+            - contenttabs-6936
+  /main/:
+    -
+      - 'contentlist-1210 67'
+      - 'custom-2196 33'
+  /extension/:
+    -
+      - headlines-2687
+    -
+      - stripsslider-8625
+    -
+      - 'promoimage-4985 33.3'
+      - 'lists-8617 33.3'
+      - 'imagegrid-1537 33.3'
+  /footer/:
+    -
+      - 'infolist-3901 33.3'
+      - 'custom-4557 33.3'
+      - 'contact-6183 33.3'
+  /copyright/:
+    -
+      - copyright-2895
+  offcanvas:
+    -
+      - mobile-menu-5259
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  mainfeature:
+    type: section
+  sidefeature:
+    type: section
+  container-3206:
+    attributes:
+      id: g-feature
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  extension:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  copyright:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  logo-8989:
+    block:
+      class: g-logo-block
+  iconmenu-6892:
+    title: 'Icon Menu'
+    block:
+      class: flush
+  menu-1125:
+    block:
+      class: g-menu-block
+  featuresslider-3827:
+    title: 'Features Slider'
+    attributes:
+      class: ''
+      title: ''
+      description: ''
+      animateIn: fadeIn
+      animateOut: fadeOut
+      nav: enabled
+      prevText: ''
+      nextText: ''
+      dots: enabled
+      loop: enabled
+      autoplay: disabled
+      autoplaySpeed: ''
+      pauseOnHover: enabled
+      items:
+        -
+          image: 'gantry-media://demo/home/showcase/roksprocket-showcase/img-01.jpg'
+          title: 'The Gantry 5 revolution has finally arrived!'
+          desc: '<p>Aphrodite is a RocketTheme Club theme for the new Gantry 5 Framework, a powerful, highly customizable and mobile friendly web builder.</p><a class="button button-3" href="#">Read More</a>'
+          link: ''
+          linktext: ''
+          buttontarget: _self
+          buttonclass: button-3
+          name: 'Item 1'
+        -
+          image: 'gantry-media://demo/home/showcase/roksprocket-showcase/img-01.jpg'
+          title: 'Built in Menu Support with Custom Editor'
+          desc: '<p>Gantry 5 benefits from its own built-in menu system, negating the need for auxiliary plugins, as well as featuring a drag and drop setup for advanced dropdown configuration.</p><a class="button button-3" href="#">Read More</a>'
+          link: ''
+          linktext: ''
+          buttontarget: _self
+          buttonclass: button-3
+          name: 'Item 2'
+        -
+          image: 'gantry-media://demo/home/showcase/roksprocket-showcase/img-01.jpg'
+          title: 'Choose and Configure the Six Preset Styles'
+          desc: '<p>Aphrodite is distributed with ten preset styles, with light and dark variations. Each can be customized in the Style Settings to individualize the theme text, background and accent colors.</p><a class="button button-3" href="#">Read More</a>'
+          link: ''
+          linktext: ''
+          buttontarget: _self
+          buttonclass: button-3
+          name: 'Item 3'
+    block:
+      class: 'flush fp-showcase-image'
+  contentlist-5190:
+    title: 'FP Main Content List'
+    attributes:
+      image: 'gantry-media://demo/home/feature/aphrodite-content/img-01.jpg'
+      imagetag: Aphrodite
+      headline: 'Construct unique and dynamic content <span class="hidden-tablet">creations </span>with RokSprocket'
+      subtitle: 'Intuitive and Versatile'
+      desc: 'RokSprocket is a powerful, content switchblade extension, that brings a vast portfolio of different layouts and themes into a single extension and UI.'
+      readmore: 'Read More'
+      link: '#'
+      cols: g-listgrid-2cols
+      listgriditems:
+        -
+          icon: 'fa fa-file-text-o fa-fw'
+          text: 'Custom administrator with intuitive controls and powerful features'
+          link: '#'
+          title: 'List Item 1'
+        -
+          icon: 'fa fa-file-text-o fa-fw'
+          text: 'Multiple layouts and themes for diverse content possibilities'
+          link: '#'
+          title: 'List Item 2'
+        -
+          icon: 'fa fa-file-text-o fa-fw'
+          text: 'Support for multiple content providers or its own simple provider'
+          link: '#'
+          title: 'List Item 3'
+        -
+          icon: 'fa fa-file-text-o fa-fw'
+          text: 'Module shortcoding to allow for inline inclusion of RokSprocket instances'
+          link: '#'
+          title: 'List Item 4'
+        -
+          icon: 'fa fa-file-text-o fa-fw'
+          text: 'Fully responsive for the modern and mobile web environment'
+          link: '#'
+          title: 'List Item 5'
+        -
+          icon: 'fa fa-file-text-o fa-fw'
+          text: 'Advanced cumulative filters for sophisticated content selection'
+          link: '#'
+          title: 'List Item 6'
+    block:
+      class: fp-contentlist
+      variations: 'box2 rounded'
+  search-1519:
+    attributes:
+      title: 'Search Our Site'
+      placeholder: Search
+    block:
+      variations: 'box1 rounded'
+  contenttabs-6936:
+    title: 'Content Tabs'
+    attributes:
+      items:
+        -
+          linklabel: ''
+          link: ''
+          content: "<div class=\"g-infolist\">\n    <div class=\"g-infolist-item g-infolist-with-img\">\n        <div class=\"g-infolist-item-img g-block size-22 hidden-phone\"> <img src=\"gantry-theme://images/demo/home/feature/roksprocket-tabs/img-01.jpg\" alt=\"image\"> </div>\n        <div class=\"g-infolist-item-text g-block size-68\">\n            <div class=\"g-infolist-item-title\"> <a href=\"http://docs.gantry.org\"><span>Introduce yourself to the new and powerful Gantry 5 Framework</span></a> </div>\n            <div class=\"g-infolist-item-desc\"> <span>Gantry benefits from an extensive, and ever expanding, catalog of online and freely available documentation covering basic to <span class=\"hidden-tablet\">more </span>advanced topics.</span>\n            </div>\n        </div>\n    </div>\n    <div class=\"g-infolist-item g-infolist-with-img\">\n        <div class=\"g-infolist-item-img g-block size-22 hidden-phone\"> <img src=\"gantry-theme://images/demo/home/feature/roksprocket-tabs/img-01.jpg\" alt=\"image\"> </div>\n        <div class=\"g-infolist-item-text g-block size-68\">\n            <div class=\"g-infolist-item-title\"> <a href=\"http://www.rockettheme.com/docs\"><span>Theme specific help guides to assist in setup and configuration</span></a> </div>\n            <div class=\"g-infolist-item-desc\"> <span class=\"visible-desktop\">The RocketTheme site provides free documentation for all our themes and plugins, to supplement understanding of their various features and capabilities.</span>\n            <span class=\"visible-tablet visible-phone\">The RocketTheme site provides free documentation for all our themes and plugins, to supplement understanding.</span>\n            </div>\n        </div>\n    </div>\n</div>"
+          title: Guide
+        -
+          linklabel: ''
+          link: ''
+          content: "<div class=\"g-infolist\">\t<div class=\"g-infolist-item g-infolist-with-img\">\t\t<div class=\"g-infolist-item-img g-block size-22 hidden-phone\">\t\t\t<img src=\"gantry-theme://images/demo/home/feature/roksprocket-tabs/img-01.jpg\" alt=\"image\">\t\t</div>\t\t<div class=\"g-infolist-item-text g-block size-68\">\t\t\t<div class=\"g-infolist-item-title\">\t\t\t\t<a href=\"http://www.rockettheme.com/forum\"><span>A community forum to ask the moderators and developers questions</span></a>\t\t\t</div>\t\t\t<div class=\"g-infolist-item-desc\">\t\t\t\tOur forums are monitored by a team of moderators, as well as the developers, to assist in general questions and problems relating to the themes and plugins.\t\t\t</div>\t\t</div>\t</div>\t<div class=\"g-infolist-item g-infolist-with-img\">\t\t<div class=\"g-infolist-item-img g-block size-22 hidden-phone\">\t\t\t<img src=\"gantry-theme://images/demo/home/feature/roksprocket-tabs/img-01.jpg\" alt=\"image\">\t\t</div>\t\t<div class=\"g-infolist-item-text g-block size-68\">\t\t\t<div class=\"g-infolist-item-title\">\t\t\t\t<a href=\"https://github.com/gantry/\"><span>Gantry is community driven and offers direct chat via Gitter</span></a>\t\t\t</div>\t\t\t<div class=\"g-infolist-item-desc\">\t\t\t\tGithub allows for an system where you can contribute code, post issues and feedback on the Gantry open source project.<span class=\"hidden-tablet\"> Discuss Gantry live with us via Gitter.</span>\t\t\t</div>\t\t</div>\t</div></div>"
+          title: Support
+    block:
+      class: nopaddingall
+  contentlist-1210:
+    title: 'Ultimate Customization'
+    attributes:
+      image: 'gantry-media://demo/home/main/aphrodite-content/img-01.jpg'
+      imagetag: Ultimate
+      headline: 'Ultimate Customization'
+      subtitle: 'Plug and Play Presets'
+      desc: 'The Styles settings provides a user friendly interface for easily customizing the stylistic elements of the template, such as color pickers for link, font or background colors. You can choose from ten predefined presets or create or customize your own.'
+      readmore: 'Read More'
+      link: '#'
+    block:
+      class: fp-contentlist
+      variations: 'box2 rounded'
+  custom-2196:
+    title: 'Responsive Layout'
+    attributes:
+      html: "<h2 class=\"g-title\">Responsive Layout</h2>\n<p><span>Aphrodite is built with a Responsive Layout, which means it automatically adapts to the viewing device, so will expand and contract accordingly to the size and resolution of the screen, whether mobile<span class=\"hidden-tablet\">, tablet</span> or desktop. This ensures a consistent<span class=\"hidden-tablet\">, and easy to maintain,</span> appearance for your site.</span></p>"
+    block:
+      variations: 'box3 rounded'
+  headlines-2687:
+    attributes:
+      class: ''
+      title: ''
+      description: ''
+      nav: enabled
+      autoplay: disabled
+      autoplaySpeed: ''
+      pauseOnHover: enabled
+      label: 'Newsflash:'
+      items:
+        -
+          image: ''
+          desc: 'Built with SASS - a powerful, professional CSS extension language…'
+          link: '#'
+          name: 'Item 1'
+        -
+          image: ''
+          desc: 'Bundled with the FontAwesome icon library to diversify content style…'
+          link: '#'
+          name: 'Item 2'
+    block:
+      variations: 'box4 rounded'
+  stripsslider-8625:
+    title: 'Strips Slider'
+    attributes:
+      class: ''
+      title: ''
+      description: ''
+      displayitems: '4'
+      nav: enabled
+      dots: enabled
+      loop: enabled
+      autoplay: disabled
+      autoplaySpeed: ''
+      pauseOnHover: enabled
+      items:
+        -
+          image: 'gantry-media://demo/home/extension/roksprocket-strips/img-01.jpg'
+          title: '<span class="g-strips-tag">Positions</span>Ultimate control over layout with drag &amp; drop positions'
+          desc: 'Infinite Possibilities'
+          link: '#'
+          linktext: ''
+          buttontarget: _self
+          name: 'Item 1'
+        -
+          image: 'gantry-media://demo/home/extension/roksprocket-strips/img-01.jpg'
+          title: '<span class="g-strips-tag">Variation</span>Assortment of preset block variations for style and structure'
+          desc: Individualization
+          link: '#'
+          linktext: ''
+          buttontarget: _self
+          name: 'Item 2'
+        -
+          image: 'gantry-media://demo/home/extension/roksprocket-strips/img-01.jpg'
+          title: '<span class="g-strips-tag">Speed</span>Improve site loading performance with built-in Twig caching'
+          desc: 'Swift &amp; Simple'
+          link: '#'
+          linktext: ''
+          buttontarget: _self
+          name: 'Item 3'
+        -
+          image: 'gantry-media://demo/home/extension/roksprocket-strips/img-01.jpg'
+          title: '<span class="g-strips-tag">Menu</span>Dropdown menu system built directly into the Gantry core'
+          desc: 'Easy Setup'
+          link: '#'
+          linktext: ''
+          buttontarget: _self
+          name: 'Item 4'
+        -
+          image: 'gantry-media://demo/home/extension/roksprocket-strips/img-01.jpg'
+          title: '<span class="g-strips-tag">Gantry</span>Built on the state-of-the-art template framework: Gantry'
+          desc: Framework
+          link: '#'
+          linktext: ''
+          buttontarget: _self
+          name: 'Item 5'
+        -
+          image: 'gantry-media://demo/home/extension/roksprocket-strips/img-01.jpg'
+          title: '<span class="g-strips-tag">Icons</span>Diversify your site typography with FontAwesome icons'
+          desc: Typography
+          link: '#'
+          linktext: ''
+          buttontarget: _self
+          name: 'Item 6'
+        -
+          image: 'gantry-media://demo/home/extension/roksprocket-strips/img-01.jpg'
+          title: '<span class="g-strips-tag">Particles</span>Selection of standard and custom particles driven by Twig'
+          desc: 'User Friendly'
+          link: '#'
+          linktext: ''
+          buttontarget: _self
+          name: 'Item 7'
+        -
+          image: 'gantry-media://demo/home/extension/roksprocket-strips/img-01.jpg'
+          title: '<span class="g-strips-tag">Sample</span>Examples of various structures showing layout flexibility'
+          desc: 'Example Pages'
+          link: '#'
+          linktext: ''
+          buttontarget: _self
+          name: 'Item 8'
+    block:
+      class: nopaddingall
+  promoimage-4985:
+    title: 'Promo Image'
+    attributes:
+      image: 'gantry-media://demo/home/extension/promo-image/img-01.jpg'
+      promoimagetitle: Mobile
+      desc: 'Mobile friendly with responsive layout and Offsection position'
+      iconbutton: 'fa fa-file-text-o fa-fw'
+      promoimageicons:
+        -
+          icon: 'fa fa-heart fa-fw'
+          link: '#'
+          title: 'Icon 1'
+        -
+          icon: 'fa fa-file-text-o fa-fw'
+          link: '#'
+          title: 'Icon 2'
+        -
+          icon: 'fa fa-paperclip fa-fw'
+          link: '#'
+          title: 'Icon 3'
+    block:
+      class: nopaddingall
+  lists-8617:
+    attributes:
+      class: ''
+      title: ''
+      description: ''
+      displayitems: '2'
+      accordion: enabled
+      nav: enabled
+      prevText: ''
+      nextText: ''
+      dots: enabled
+      loop: enabled
+      autoplay: disabled
+      autoplaySpeed: ''
+      pauseOnHover: enabled
+      items:
+        -
+          image: ''
+          title: 'YAML-driven<span class="hidden-tablet"> Configuration</span>'
+          desc: '<div><span class="visible-desktop">YAML is a human-readable data serialization, making it easy to create and configure blueprints for back-end configuration options.</span><span class="visible-tablet visible-phone">YAML is a human-readable data serialization.</span></div>'
+          link: '#'
+          linktext: ''
+          buttontarget: _self
+          name: 'Item 1'
+        -
+          image: ''
+          title: 'Twig Templating'
+          desc: '<div><span class="visible-desktop">Gantry 5 utilizes Twig - a flexible, fast, and secure template engine for PHP - to make creating powerful, dynamic themes quick and easy.</span><span class="visible-tablet visible-phone">Gantry 5 utilizes Twig - a template engine for PHP.</span></div>'
+          link: '#'
+          linktext: ''
+          buttontarget: _self
+          name: 'Item 2'
+        -
+          image: ''
+          title: 'Particles System'
+          desc: '<div><span class="visible-desktop">Gantry 5''s Particles system makes it easy to create, configure, and manage content blocks on multiple levels.</span><span class="visible-phone visible-tablet">Gantry 5''s Particles system makes it easy to manage content blocks.</span></div>'
+          link: '#'
+          linktext: ''
+          buttontarget: _self
+          name: 'Item 3'
+        -
+          image: ''
+          title: 'Use SCSS, LESS or CSS'
+          desc: '<div><span class="visible-desktop">The Gantry 5 Framework has built-in support for SCSS, and pure CSS, with the ability to support and LESS.</span><span class="visible-tablet visible-phone">The Gantry 5 Framework has built-in support for SCSS and LESS.</span></div>'
+          link: '#'
+          linktext: ''
+          buttontarget: _self
+          name: 'Item 4'
+    block:
+      class: nopaddingall
+      variations: 'box3 rounded'
+  imagegrid-1537:
+    title: 'Photo Gallery'
+    attributes:
+      title: 'Photo Gallery'
+      desc: 'Using the power of <a href="#">Gantry 5 Particles</a> to create a customizable image grid.'
+      cols: g-imagegrid-4cols
+      album: 'Gantry 5 Album'
+      imagegriditems:
+        -
+          image: 'gantry-media://demo/home/extension/image-grid/img-01.jpg'
+          caption: 'Lightcase Image 1'
+          title: 'Photo 1'
+        -
+          image: 'gantry-media://demo/home/extension/image-grid/img-02.jpg'
+          caption: 'Lightcase Image 2'
+          title: 'Photo 2'
+        -
+          image: 'gantry-media://demo/home/extension/image-grid/img-03.jpg'
+          caption: 'Lightcase Image 3'
+          title: 'Photo 3'
+        -
+          image: 'gantry-media://demo/home/extension/image-grid/img-04.jpg'
+          caption: 'Lightcase Image 4'
+          title: 'Photo 4'
+        -
+          image: 'gantry-media://demo/home/extension/image-grid/img-05.jpg'
+          caption: 'Lightcase Image 5'
+          title: 'Photo 5'
+        -
+          image: 'gantry-media://demo/home/extension/image-grid/img-06.jpg'
+          caption: 'Lightcase Image 6'
+          title: 'Photo 6'
+        -
+          image: 'gantry-media://demo/home/extension/image-grid/img-07.jpg'
+          caption: 'Lightcase Image 7'
+          title: 'Photo 7'
+        -
+          image: 'gantry-media://demo/home/extension/image-grid/img-08.jpg'
+          caption: 'Lightcase Image 8'
+          title: 'Photo 8'
+    block:
+      variations: 'box4 rounded'
+  infolist-3901:
+    title: 'Advanced Features'
+    attributes:
+      title: 'Advanced Features'
+      infolists:
+        -
+          link: '#'
+          description: 'Gantry 5''s new layout manager features drag-and-drop functionality.'
+          title: 'Flexible and Easy Layout Manager'
+        -
+          link: '#'
+          description: 'Quickly insert Particles, rearrange menu items, and add icons in seconds.'
+          title: 'Powerful Menu Editor'
+        -
+          link: '#'
+          description: 'Gantry 5''s Particles system makes it easy to create and configure content blocks.'
+          title: 'New Particles System'
+  custom-4557:
+    title: 'Demo Information'
+    attributes:
+      html: "<h2 class=\"g-title\">Demo Information</h2>\n\n<p>All demo content is for sample purposes only, intended to represent a live site. All content images are licensed from <a href=\"http://tookapic.com\">tookapic.com</a> for exclusive use on this demo only.</p>\n<p>Note: Aphrodite theme is built on the Gantry 5 framework, the most customizable and powerful version of the framework yet.</p>\n\n<a href=\"http://www.rockettheme.com/joomla/templates/aphrodite\" class=\"button button-3\"><i class=\"fa fa-cloud-download\"></i> Download</a>"
+  contact-6183:
+    title: 'Contact Details'
+    attributes:
+      title: 'Contact Details'
+      contactitems:
+        -
+          icon: 'fa fa-phone fa-fw'
+          label: 'Call Us'
+          text: +1(555)-555-555
+          title: 'Call Us'
+        -
+          icon: 'fa fa-map-marker fa-fw'
+          label: Office
+          text: '555 RocketTheme Blvd, CO'
+          title: Office
+        -
+          icon: 'fa fa-envelope fa-fw'
+          label: 'Say Hi'
+          text: hello@no-reply.com
+          title: 'Say Hi'
+        -
+          icon: 'fa fa-comment fa-fw'
+          label: 'Need Advice?'
+          text: '<a href="#">Live Chat with Us</a>'
+          title: 'Need Advice'
+  copyright-2895:
+    attributes:
+      date:
+        start: '2007'
+      owner: 'RocketTheme, LLC'
+    block:
+      class: center
+  mobile-menu-5259:
+    title: 'Mobile Menu'

@@ -1,0 +1,111 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    {% block layout %}
+
+        <div class="{{ particle.class|e }} g-owlcarousel-strips-slider g-owlcarousel-strips-{{ particle.displayitems }}-items">
+            {% if particle.title or particle.description %}
+                <div class="g-grid">
+                    <div class="g-block">
+                        <div class="g-content g-owlcarousel-header">
+                            {% if particle.title %}<h2 class="g-title">{{ particle.title }}</h2>{% endif %}
+                            {% if particle.description %}<div class="g-owlcarousel-description">{{ particle.description|html|raw }}</div>{% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+
+            <div id="g-owlcarousel-{{ id }}" data-owlcarousel-id="g-owlcarousel-{{ id }}" class="g-owlcarousel owl-carousel">
+
+                {% for item in particle.items %}
+                    <div class="item" data-hash="{{ id }}-{{ loop.index }}" {% if item.image %}style="background-image: url({{ url(item.image)|e }});"{% endif %}>
+                        <div class="g-owlcarousel-content">
+                            {% if item.title %}
+                                <h4 class="g-owlcarousel-item-title">
+                                    {% if item.link %}<a href="{{ item.link|e }}">{% endif %}
+
+                                    {{ item.title|html|raw }}
+
+                                    {% if item.link %}</a>{% endif %}
+                                </h4>
+                            {% endif %}
+
+                            {% if item.desc %}
+                                <span class="g-owlcarousel-item-desc">
+                                    {{ item.desc|html|raw }}
+                                </span>
+                            {% endif %}
+
+                            {% if item.link %}
+                                <a target="{{ item.buttontarget|default('_self')|e }}" class="g-owlcarousel-item-button readon" href="{{ item.link|e }}">
+                                    <span>{{ item.linktext|html|raw|default('Read More') }}</span>
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+    {% endblock %}
+{% endblock %}
+
+{% block javascript_footer %}
+    {% do gantry.load('jquery') %}
+    <script src="{{ url('gantry-theme://js/owlcarousel.js') }}"></script>
+    <script type="text/javascript">
+    jQuery(window).load(function() {
+        var owl{{ id|replace({'-':'_'}) }} = jQuery('#g-owlcarousel-{{ id }}');
+        owl{{ id|replace({'-':'_'}) }}.owlCarousel({
+            items: {{ particle.displayitems }},
+            slideBy: {{ particle.displayitems }},
+            margin: 20,
+            smartSpeed: 100,
+            rtl: {% if gantry.page.direction == 'rtl' %}true{% else %}false{% endif %},
+            {% if particle.nav == 'enabled' %}
+            nav: true,
+            navText: ['&lsaquo;', '&rsaquo;'],
+            {% else %}
+            nav: false,
+            {% endif %}
+            {% if particle.dots == 'enabled' %}
+            dots: true,
+            {% else %}
+            dots: false,
+            {% endif %}
+            {% if particle.loop == 'enabled' %}
+            loop: true,
+            {% else %}
+            loop: false,
+            {% endif %}
+            {% if particle.autoplay == 'enabled' %}
+            autoplay: true,
+            autoplayTimeout: {{ particle.autoplaySpeed|default('5000') }},
+            {% if particle.pauseOnHover == 'enabled' %}
+            autoplayHoverPause: true,
+            {% else %}
+            autoplayHoverPause: false,
+            {% endif %}
+            {% else %}
+            autoplay: false,
+            {% endif %}
+            URLhashListener: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                480: {
+                    items: 1,
+                },
+                700: {
+                    items: 2,
+                },
+                1000: {
+                    items: {{ particle.displayitems }},
+                },
+            },
+        })
+    });
+    </script>
+{% endblock %}

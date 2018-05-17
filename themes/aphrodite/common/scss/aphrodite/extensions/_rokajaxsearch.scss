@@ -1,0 +1,214 @@
+.rokajaxsearch {
+    *,  *:before,  *:after {
+        box-sizing: border-box !important;
+        .platform-content & {
+            *,  *:before,  *:after {
+                box-sizing: border-box;
+            }
+        }
+    }
+    #roksearch_search_str {
+        border: 1px solid transparent;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+        padding: 0.35rem 1rem;
+        width: 100%;
+    }
+}
+form#rokajaxsearch {
+    margin: 0;
+    > .rokajaxsearch {
+        background: none;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+// RokAjaxSearch
+#roksearch_results {
+    color: $base-text-color;
+    background: $base-background;
+    border: 1px solid $base-border-color;
+    .roksearch_result_wrapper1 {
+        background: darken($base-background, 5%);
+        color: $base-text-color;
+        &:hover {
+            background: $accent-color-1;
+            color: darken($accent-color-1, 25%);
+            border: 1px solid darken($accent-color-1, 35%);
+        }
+    }
+    span.highlight {
+        color: $white;
+        background-color: darken($accent-color-1, 15%);
+        text-shadow: none;
+    }
+    @include breakpoint(mobile-only) {
+        body & {
+            width: 95%;
+        }
+    }
+}
+.rokajaxsearch {
+    .search_options {
+        margin-top: 8px;
+        padding-bottom: 15px;
+        label {
+            margin-right: 10px !important;
+            input[type="radio"], input[type="checkbox"] {
+                margin: 0 5px 0 0;
+            }
+        }
+    }
+    .clr {
+        clear: both;
+    }
+    .searchintro {
+        overflow: hidden;
+    }
+}
+#roksearch_results {
+    z-index: 10000;
+    position: absolute;
+    width: 400px;
+    float: right;
+    text-align: left;
+    visibility: hidden;
+    margin-top: 5px;
+    .small {
+        display: inline;
+        position: relative;
+        text-align: inherit;
+        bottom: 0;
+        right: 0;
+        font-size: 11px;
+        font-style: italic;
+    }
+    a.clr {
+        margin: 10px 0 5px 0;
+    }
+    h3 {
+        color: invert($base-background);
+        margin-top: 0;
+        margin-bottom: 2px;
+        line-height: 110%;
+        font-size: 110%;
+        padding-bottom: 0;
+        &:hover {
+            color: inherit;
+        }
+    }
+    .container-wrapper {
+        overflow: hidden;
+    }
+    .page {
+        float: left;
+    }
+    .roksearch_header, .roksearch_row_btm {
+        background: darken($base-background, 5%);
+        padding: 10px 15px;
+        line-height: 130%;
+        text-transform: none;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .roksearch_row_btm {
+        overflow: hidden;
+        border-top: 1px solid $base-border-color;
+    }
+    .roksearch_even, .roksearch_odd {
+        padding: 15px;
+        border-bottom: none;
+        span {
+            margin-top: 15px;
+            line-height: 140%;
+            &.highlight {
+                margin-top: 0;
+                padding: 0 3px;
+            }
+        }
+    }
+    .viewall {
+        float: left;
+        margin: 0 5px;
+        span {
+            line-height: 130%;
+            text-transform: none;
+        }
+    }
+    .estimated_res {
+        font-size: 9px;
+        font-style: italic;
+        text-transform: none;
+        float:left;
+    }
+    .pagination_res {
+        font-style: normal;
+        float: right;
+        text-transform: none;
+        font-size: 11px;
+        span {
+            padding: 0 5px;
+        }
+    }
+    .powered-by-google {
+        text-transform: lowercase;
+        font-style: italic;
+        font-size: 9px;
+    }
+    .google-search {
+        #roksearch_link {
+            margin-top: 5px;
+        }
+    }
+    .google-thumb-image {
+        margin: 0 auto;
+    }
+    .readon {
+        margin-top: 15px;
+        span, .button {
+            font-size: 13px;
+            line-height: 22px;
+        }
+    }
+    .container-arrows {
+        height: 12px;
+        width: 30px;
+        float: left;
+        margin-right: 5px;
+        position: relative;
+    }
+    #roksearch_link:before{
+        content: "×";
+        font-size: 1.5em;
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        z-index: 100;
+    }
+    .arrow-left, .arrow-left-disabled, .arrow-right, .arrow-right-disabled {
+        position: absolute;
+        &:before {
+            font-family: FontAwesome;
+            font-size: 1.3em;
+        }
+    }
+    .arrow-left, .arrow-right {
+        cursor: pointer;
+        &:before {
+            color: $accent-color-1;
+        }
+    }
+    .arrow-left, .arrow-left-disabled {
+        left: 0;
+        &:before {
+            content: '\f104';
+        }
+    }
+    .arrow-right, .arrow-right-disabled {
+        left: 18px;
+        &:before {
+            content: '\f105';
+        }
+    }
+}

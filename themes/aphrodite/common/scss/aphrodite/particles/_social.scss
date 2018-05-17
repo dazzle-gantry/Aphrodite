@@ -1,0 +1,18 @@
+.g-social {
+	a {
+		display: inline-block;
+		background: $base-text-color;
+        color: $base-background;
+		border-radius: $core-border-radius;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0.1rem 0.25rem;
+        span {
+            vertical-align: middle;
+        }
+        &:hover {
+            color: $white;
+            background: $accent-color-1;
+        }
+	}
+}
